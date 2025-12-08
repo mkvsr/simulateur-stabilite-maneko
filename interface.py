@@ -937,6 +937,8 @@ st.markdown("""
 <style>
 /* Style commun du bouton Simulation */
 div.st-key-run_sim button {
+    all: unset !important;
+    color: #FDFFFF !important;
     background-color: #0071E3 !important;
     border: 0px solid #0071E3 !important;
     border-radius: 15px !important;
@@ -1046,6 +1048,7 @@ if run:
 
     with st.expander("Stabilité statique (mode work)"):
         st.json(result["static"]["work"])
+
 
 
 
