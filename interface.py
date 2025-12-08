@@ -163,11 +163,11 @@ div[role="slider"]:hover {
 [data-testid="stSliderThumbValue"] {
     background-color: transparent !important;
     color: #1D1D1F !important;
-    font-size: 11px
+    font-size: 8px
     font-weight: 400 !important;
     border-radius: 6px !important;
     padding: 12px 00px !important;
-    margin-top: -15px !important;
+    margin-top: -0px !important;
 }
 
 
@@ -1040,6 +1040,7 @@ if run:
 
     with st.expander("Stabilité statique (mode work)"):
         st.json(result["static"]["work"])
+
 
 
 
