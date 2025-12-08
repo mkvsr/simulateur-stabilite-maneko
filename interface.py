@@ -311,7 +311,7 @@ st.markdown("""
         background-color: #FFFFFF !important;   /* Fond */
         min-height: 83px !important;      /* Hauteur totale */
         min-width: 100% !important;      /* largeur totale */
-        padding: 5px 10px !important;
+        padding: 0px 10px !important;
         color: #1D1D1F !important;
         font-weight: 600 !important;
         font-size: 17px !important;
@@ -1068,6 +1068,7 @@ if run:
 
     with st.expander("Stabilité statique (mode work)"):
         st.json(result["static"]["work"])
+
 
 
 
