@@ -101,7 +101,7 @@ p, label, span, input, textarea, div:not(.stButton) {
     letter-spacing: -0.016em;
     margin-top: 0px !important;
     margin-bottom: 0px !important;
-    color: #000000 !important;
+    color: #000000 ;
     
 }
 
@@ -1040,6 +1040,7 @@ if run:
 
     with st.expander("Stabilité statique (mode work)"):
         st.json(result["static"]["work"])
+
 
 
 
