@@ -102,7 +102,7 @@ h3 {
 
     margin-top: 0px !important;
     margin-bottom: 0px !important;
-    color: #D32F2F;
+    color: #1D1D1F;
 }
 
 /* === SELECTBOX & UI WIDGETS === */
@@ -947,8 +947,8 @@ st.markdown("""
 <style>
 /* Style commun du bouton Simulation */
 div.st-key-run_sim button {
-    background-color: #0071E3 !important;
-    border: 0px solid #0071E3 !important;
+    background-color: transparent !important;
+    border: 2px solid #0071E3 !important;
     border-radius: 15px !important;
     min-height: 83px !important;      /* Hauteur totale */
     padding: 15px !important;
