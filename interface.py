@@ -938,7 +938,9 @@ with col2:
 # 🟧 BOUTON DE CALCUL
 # ====================================================================
 
-st.markdown("---")
+st.markdown("""
+<div style="height:0.5px;background:#D5D5D9;margin-top:20px;margin-bottom:-20px;"></div>
+""", unsafe_allow_html=True)
 
 # ----- CSS pour le bouton de simulation -----
 st.markdown("""
