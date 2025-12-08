@@ -1,0 +1,22 @@
+{
+    "name": "Fendt VARIO 300",
+    "brand": "Fendt",
+    "model": "VARIO 300",
+    "mass": 4850.0,
+    "mass_front_pct": 50.0,
+    "mass_rear_pct": 50.0,
+    "tire_defaults": {
+        "front": "440/65R24",
+        "rear": "540/65R34"
+    },
+    "geometry": {
+        "wheelbase": 2.42,
+        "track_front": 1.82,
+        "track_rear": 1.8
+    },
+    "dynamics": {
+        "max_speed_kmh": 40.0,
+        "max_braking_accel": 5.144032921810699,
+        "max_turn_radius": 5.1
+    }
+}

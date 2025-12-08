@@ -1,0 +1,22 @@
+{
+    "name": "Fendt VARIO 200",
+    "brand": "Fendt",
+    "model": "VARIO 200",
+    "mass": 4200.0,
+    "mass_front_pct": 50.0,
+    "mass_rear_pct": 50.0,
+    "tire_defaults": {
+        "front": "380/70R24",
+        "rear": "480/70R34"
+    },
+    "geometry": {
+        "wheelbase": 2.37,
+        "track_front": 1.69,
+        "track_rear": 1.66
+    },
+    "dynamics": {
+        "max_speed_kmh": 40.0,
+        "max_braking_accel": 5.144032921810699,
+        "max_turn_radius": 4.3
+    }
+}

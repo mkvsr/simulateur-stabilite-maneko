@@ -1,0 +1,22 @@
+{
+    "name": "Fendt VARIO 500",
+    "brand": "Fendt",
+    "model": "VARIO 500",
+    "mass": 6050.0,
+    "mass_front_pct": 50.0,
+    "mass_rear_pct": 50.0,
+    "tire_defaults": {
+        "front": "480/65R28",
+        "rear": "600/65R38"
+    },
+    "geometry": {
+        "wheelbase": 2.56,
+        "track_front": 1.88,
+        "track_rear": 1.86
+    },
+    "dynamics": {
+        "max_speed_kmh": 50.0,
+        "max_braking_accel": 5.358367626886146,
+        "max_turn_radius": 5.2
+    }
+}

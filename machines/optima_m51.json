@@ -1,0 +1,14 @@
+{
+    "model": "OPTIMA M51",
+    "mass": 1640,
+    "transport": {
+        "x_rel": -0.65,
+        "y_rel": 0.155,
+        "z_rel": 1.38
+    },
+    "work": {
+        "x_rel": 0.05,
+        "y_rel": -1.42,
+        "z_rel": 1.11
+    }
+}

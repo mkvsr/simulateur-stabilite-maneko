@@ -1,0 +1,22 @@
+{
+    "name": "Lindner LINTRAC 80",
+    "brand": "Lindner",
+    "model": "LINTRAC 80",
+    "mass": 3920.0,
+    "mass_front_pct": 50.0,
+    "mass_rear_pct": 50.0,
+    "tire_defaults": {
+        "front": "375/70R20",
+        "rear": "420/85R30"
+    },
+    "geometry": {
+        "wheelbase": 2.264,
+        "track_front": 1.71,
+        "track_rear": 1.71
+    },
+    "dynamics": {
+        "max_speed_kmh": 40.0,
+        "max_braking_accel": 5.144032921810699,
+        "max_turn_radius": 3.5
+    }
+}

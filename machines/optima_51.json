@@ -1,0 +1,14 @@
+{
+    "model": "OPTIMA 51",
+    "mass": 1640,
+    "transport": {
+        "x_rel": -0.66,
+        "y_rel": 0.155,
+        "z_rel": 1.38
+    },
+    "work": {
+        "x_rel": -0.2,
+        "y_rel": -1.38,
+        "z_rel": 1.11
+    }
+}

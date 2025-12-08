@@ -1,0 +1,14 @@
+{
+    "model": "MAGISTRA M61T",
+    "mass": 2255,
+    "transport": {
+        "x_rel": -0.635,
+        "y_rel": 0.155,
+        "z_rel": 1.44
+    },
+    "work": {
+        "x_rel": 0.05,
+        "y_rel": -1.51,
+        "z_rel": 1.17
+    }
+}

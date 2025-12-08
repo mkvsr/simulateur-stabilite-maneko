@@ -1,0 +1,22 @@
+{
+    "name": "John Deere SERIE 8R",
+    "brand": "John Deere",
+    "model": "SERIE 8R",
+    "mass": 13400.0,
+    "mass_front_pct": 50.0,
+    "mass_rear_pct": 50.0,
+    "tire_defaults": {
+        "front": "520/70R34",
+        "rear": "710/70R42"
+    },
+    "geometry": {
+        "wheelbase": 3.05,
+        "track_front": 2.602,
+        "track_rear": 2.602
+    },
+    "dynamics": {
+        "max_speed_kmh": 50.0,
+        "max_braking_accel": 5.358367626886146,
+        "max_turn_radius": 5.7
+    }
+}

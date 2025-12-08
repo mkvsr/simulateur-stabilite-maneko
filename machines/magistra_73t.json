@@ -1,0 +1,14 @@
+{
+    "model": "MAGISTRA 73T",
+    "mass": 2225,
+    "transport": {
+        "x_rel": -0.67,
+        "y_rel": 0.155,
+        "z_rel": 1.44
+    },
+    "work": {
+        "x_rel": -0.25,
+        "y_rel": -1.83,
+        "z_rel": 1.17
+    }
+}

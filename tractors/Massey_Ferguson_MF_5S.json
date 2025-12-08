@@ -1,0 +1,22 @@
+{
+    "name": "Massey Ferguson MF 5S",
+    "brand": "Massey Ferguson",
+    "model": "MF 5S",
+    "mass": 4800.0,
+    "mass_front_pct": 50.0,
+    "mass_rear_pct": 50.0,
+    "tire_defaults": {
+        "front": "340/85R24",
+        "rear": "340/85R28"
+    },
+    "geometry": {
+        "wheelbase": 2.55,
+        "track_front": 1.7,
+        "track_rear": 1.7
+    },
+    "dynamics": {
+        "max_speed_kmh": 40.0,
+        "max_braking_accel": 5.144032921810699,
+        "max_turn_radius": 4.0
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "name": "Claas AXION 800",
+    "brand": "Claas",
+    "model": "AXION 800",
+    "mass": 9150.0,
+    "mass_front_pct": 50.0,
+    "mass_rear_pct": 50.0,
+    "tire_defaults": {
+        "front": "540/65R34",
+        "rear": "650/85R38"
+    },
+    "geometry": {
+        "wheelbase": 2.98,
+        "track_front": 3.0,
+        "track_rear": 3.0
+    },
+    "dynamics": {
+        "max_speed_kmh": 50.0,
+        "max_braking_accel": 5.358367626886146,
+        "max_turn_radius": 5.31
+    }
+}

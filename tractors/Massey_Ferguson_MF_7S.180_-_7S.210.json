@@ -1,0 +1,22 @@
+{
+    "name": "Massey Ferguson MF 7S.180 - 7S.210",
+    "brand": "Massey Ferguson",
+    "model": "MF 7S.180 - 7S.210",
+    "mass": 7500.0,
+    "mass_front_pct": 50.0,
+    "mass_rear_pct": 50.0,
+    "tire_defaults": {
+        "front": "480/70R28",
+        "rear": "580/70R38"
+    },
+    "geometry": {
+        "wheelbase": 2.88,
+        "track_front": 1.9,
+        "track_rear": 1.9
+    },
+    "dynamics": {
+        "max_speed_kmh": 50.0,
+        "max_braking_accel": 5.358367626886146,
+        "max_turn_radius": 4.93
+    }
+}

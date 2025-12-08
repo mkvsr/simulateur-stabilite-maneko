@@ -1,0 +1,22 @@
+{
+    "name": "Lindner LINTRAC 110",
+    "brand": "Lindner",
+    "model": "LINTRAC 110",
+    "mass": 4000.0,
+    "mass_front_pct": 50.0,
+    "mass_rear_pct": 50.0,
+    "tire_defaults": {
+        "front": "440/65R24",
+        "rear": "540/65R34"
+    },
+    "geometry": {
+        "wheelbase": 2.34,
+        "track_front": 1.77,
+        "track_rear": 1.77
+    },
+    "dynamics": {
+        "max_speed_kmh": 40.0,
+        "max_braking_accel": 5.144032921810699,
+        "max_turn_radius": 4.0
+    }
+}

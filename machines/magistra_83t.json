@@ -1,0 +1,14 @@
+{
+    "model": "MAGISTRA 83T",
+    "mass": 2450,
+    "transport": {
+        "x_rel": -0.72,
+        "y_rel": 0.155,
+        "z_rel": 1.44
+    },
+    "work": {
+        "x_rel": -0.2,
+        "y_rel": -2.3,
+        "z_rel": 1.17
+    }
+}

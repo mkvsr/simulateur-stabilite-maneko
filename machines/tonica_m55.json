@@ -1,0 +1,14 @@
+{
+    "model": "TONICA M55",
+    "mass": 1465,
+    "transport": {
+        "x_rel": -0.6,
+        "y_rel": 0.155,
+        "z_rel": 1.36
+    },
+    "work": {
+        "x_rel": -0.1,
+        "y_rel": -1.59,
+        "z_rel": 1.09
+    }
+}

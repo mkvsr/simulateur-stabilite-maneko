@@ -1,0 +1,14 @@
+{
+    "model": "OPTIMA M57T",
+    "mass": 1780,
+    "transport": {
+        "x_rel": -0.75,
+        "y_rel": 0.155,
+        "z_rel": 1.38
+    },
+    "work": {
+        "x_rel": 0.18,
+        "y_rel": -1.625,
+        "z_rel": 1.11
+    }
+}

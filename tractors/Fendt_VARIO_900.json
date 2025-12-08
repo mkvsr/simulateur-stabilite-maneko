@@ -1,0 +1,22 @@
+{
+    "name": "Fendt VARIO 900",
+    "brand": "Fendt",
+    "model": "VARIO 900",
+    "mass": 11300.0,
+    "mass_front_pct": 50.0,
+    "mass_rear_pct": 50.0,
+    "tire_defaults": {
+        "front": "600/65R34",
+        "rear": "710/70R42"
+    },
+    "geometry": {
+        "wheelbase": 3.15,
+        "track_front": 2.1,
+        "track_rear": 2.0
+    },
+    "dynamics": {
+        "max_speed_kmh": 50.0,
+        "max_braking_accel": 5.358367626886146,
+        "max_turn_radius": 5.9
+    }
+}

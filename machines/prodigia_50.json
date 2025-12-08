@@ -1,0 +1,14 @@
+{
+    "model": "PRODIGIA 50",
+    "mass": 1225,
+    "transport": {
+        "x_rel": -0.62,
+        "y_rel": 0.155,
+        "z_rel": 1.25
+    },
+    "work": {
+        "x_rel": -0.11,
+        "y_rel": -1.4,
+        "z_rel": 0.98
+    }
+}

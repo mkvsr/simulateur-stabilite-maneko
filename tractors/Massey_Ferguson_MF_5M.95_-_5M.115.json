@@ -1,0 +1,22 @@
+{
+    "name": "Massey Ferguson MF 5M.95 - 5M.115",
+    "brand": "Massey Ferguson",
+    "model": "MF 5M.95 - 5M.115",
+    "mass": 4225.0,
+    "mass_front_pct": 50.0,
+    "mass_rear_pct": 50.0,
+    "tire_defaults": {
+        "front": "320/85R24",
+        "rear": "420/85R34"
+    },
+    "geometry": {
+        "wheelbase": 2.43,
+        "track_front": 1.795,
+        "track_rear": 1.795
+    },
+    "dynamics": {
+        "max_speed_kmh": 40.0,
+        "max_braking_accel": 5.144032921810699,
+        "max_turn_radius": 4.65
+    }
+}

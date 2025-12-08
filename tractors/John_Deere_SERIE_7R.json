@@ -1,0 +1,22 @@
+{
+    "name": "John Deere SERIE 7R",
+    "brand": "John Deere",
+    "model": "SERIE 7R",
+    "mass": 11400.0,
+    "mass_front_pct": 50.0,
+    "mass_rear_pct": 50.0,
+    "tire_defaults": {
+        "front": "620/75R30",
+        "rear": "800/70R38"
+    },
+    "geometry": {
+        "wheelbase": 2.925,
+        "track_front": 2.55,
+        "track_rear": 2.55
+    },
+    "dynamics": {
+        "max_speed_kmh": 50.0,
+        "max_braking_accel": 5.358367626886146,
+        "max_turn_radius": 6.4
+    }
+}

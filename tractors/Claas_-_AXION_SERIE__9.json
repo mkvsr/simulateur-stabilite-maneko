@@ -1,0 +1,22 @@
+{
+    "name": "Claas AXION SERIE  9",
+    "brand": "Claas",
+    "model": "AXION SERIE  9",
+    "mass": 13500.0,
+    "mass_front_pct": 50.0,
+    "mass_rear_pct": 50.0,
+    "tire_defaults": {
+        "front": "650/60R38",
+        "rear": "750/70R44"
+    },
+    "geometry": {
+        "wheelbase": 3.15,
+        "track_front": 3.0,
+        "track_rear": 3.0
+    },
+    "dynamics": {
+        "max_speed_kmh": 50.0,
+        "max_braking_accel": 5.358367626886146,
+        "max_turn_radius": 6.96
+    }
+}

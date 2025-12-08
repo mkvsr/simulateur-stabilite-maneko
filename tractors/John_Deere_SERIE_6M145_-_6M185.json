@@ -1,0 +1,22 @@
+{
+    "name": "John Deere SERIE 6M145 - 6M185",
+    "brand": "John Deere",
+    "model": "SERIE 6M145 - 6M185",
+    "mass": 7800.0,
+    "mass_front_pct": 50.0,
+    "mass_rear_pct": 50.0,
+    "tire_defaults": {
+        "front": "540/65R28",
+        "rear": "650/65R38"
+    },
+    "geometry": {
+        "wheelbase": 2.765,
+        "track_front": 2.55,
+        "track_rear": 2.55
+    },
+    "dynamics": {
+        "max_speed_kmh": 50.0,
+        "max_braking_accel": 5.358367626886146,
+        "max_turn_radius": 5.62
+    }
+}

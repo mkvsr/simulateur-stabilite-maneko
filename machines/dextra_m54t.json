@@ -1,0 +1,14 @@
+{
+    "model": "DEXTRA M54T",
+    "mass": 1604,
+    "transport": {
+        "x_rel": -0.56,
+        "y_rel": 0.155,
+        "z_rel": 1.3
+    },
+    "work": {
+        "x_rel": 0.1,
+        "y_rel": -1.69,
+        "z_rel": 1.03
+    }
+}

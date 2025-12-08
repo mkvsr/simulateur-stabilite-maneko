@@ -1,0 +1,22 @@
+{
+    "name": "Fendt VARIO 800",
+    "brand": "Fendt",
+    "model": "VARIO 800",
+    "mass": 9900.0,
+    "mass_front_pct": 50.0,
+    "mass_rear_pct": 50.0,
+    "tire_defaults": {
+        "front": "600/70R30",
+        "rear": "710/70R42"
+    },
+    "geometry": {
+        "wheelbase": 3.02,
+        "track_front": 2.03,
+        "track_rear": 2.03
+    },
+    "dynamics": {
+        "max_speed_kmh": 50.0,
+        "max_braking_accel": 5.358367626886146,
+        "max_turn_radius": 5.67
+    }
+}
