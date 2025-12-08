@@ -96,12 +96,12 @@ h3 {
 }
 
 /* === TEXTE CORPS (labels, spans, paragraphes…) === */
-p, label, span, div, input, textarea {
-    font-family: var(--font-body) ;
-    letter-spacing: -0.016em ;
+p, label, span, input, textarea, div:not(.stButton) {
+    font-family: var(--font-body);
+    letter-spacing: -0.016em;
     margin-top: 0px !important;
     margin-bottom: 0px !important;
-    color: #000000 ;
+    color: #000000 !important;
     
 }
 
@@ -1040,6 +1040,7 @@ if run:
 
     with st.expander("Stabilité statique (mode work)"):
         st.json(result["static"]["work"])
+
 
 
 
