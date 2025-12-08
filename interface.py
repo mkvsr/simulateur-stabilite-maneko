@@ -169,7 +169,7 @@ div[role="slider"]:hover {
 /* ======== TOOLTIP (valeur affichée au-dessus du thumb) ======== */
 [data-testid="stSliderThumbValue"] {
     background-color: transparent !important;
-    color: black !important;
+    color: #1D1D1F !important;
     font-size: 11px
     font-weight: 400 !important;
     border-radius: 6px !important;
@@ -1045,6 +1045,7 @@ if run:
 
     with st.expander("Stabilité statique (mode work)"):
         st.json(result["static"]["work"])
+
 
 
 
