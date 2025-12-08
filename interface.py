@@ -113,15 +113,7 @@ p, label, span, div, input, textarea {
     margin-top: 0px !important;
 }
 
-/* === SLIDERS (texte + valeur affichée) === */
-[data-testid="stSliderThumbValue"] {
-    font-family: var(--font-ui) !important;
-    font-weight: 400 !important;
-    font-size: 11px !important;
-    letter-spacing: -0.03em !important;
-    color: #D32F2F !important;
-    margin-top: 15px !important;
-}
+
 
 
 
@@ -1045,6 +1037,7 @@ if run:
 
     with st.expander("Stabilité statique (mode work)"):
         st.json(result["static"]["work"])
+
 
 
 
