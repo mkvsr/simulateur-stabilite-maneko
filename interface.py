@@ -945,20 +945,22 @@ div.st-key-run_sim button {
     padding: 15px !important;
     font-size: 20px !important;
     font-weight: 600 !important;
-    color: #FDFFFF !important;
     width: 100% !important;
     transition: all 0.2s ease-in-out !important;
+    color: #FDFFFF !important;
 }
 
 /* Hover */
 div.st-key-run_sim button:hover {
     border: 0px solid #A3A3AB !important;
+    color: #FDFFFF !important;
 }
 
 /* État actif (halo bleu) */
 div.st-key-run_sim button.active-btn {
     border: 2px solid #A3A3AB !important;
     box-shadow: 0 0 0 4px rgba(0,113,227,0.25) !important;
+    color: #FDFFFF !important;
 }
 </style>
 """, unsafe_allow_html=True)
@@ -1039,6 +1041,7 @@ if run:
 
     with st.expander("Stabilité statique (mode work)"):
         st.json(result["static"]["work"])
+
 
 
 
