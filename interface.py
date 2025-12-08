@@ -101,6 +101,8 @@ p, label, span, div, input, textarea {
     letter-spacing: -0.016em ;
     margin-top: 0px !important;
     margin-bottom: 0px !important;
+    color: #D32F2F !important;
+    
     
 }
 
@@ -1037,6 +1039,7 @@ if run:
 
     with st.expander("Stabilité statique (mode work)"):
         st.json(result["static"]["work"])
+
 
 
 
