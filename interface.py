@@ -946,7 +946,6 @@ div.st-key-run_sim button {
     font-weight: 600 !important;
     width: 100% !important;
     transition: all 0.2s ease-in-out !important;
-    color: #FDFFFF !important;
 }
 
 /* Hover */
@@ -961,6 +960,13 @@ div.st-key-run_sim button.active-btn {
     box-shadow: 0 0 0 4px rgba(0,113,227,0.25) !important;
     color: #FDFFFF !important;
 }
+
+/* Forcer la couleur du texte du bouton */
+div.st-key-run_sim button,
+.stButton > button {
+    color: #FDFFFF !important;
+}
+
 </style>
 """, unsafe_allow_html=True)
 
@@ -1040,6 +1046,7 @@ if run:
 
     with st.expander("Stabilité statique (mode work)"):
         st.json(result["static"]["work"])
+
 
 
 
