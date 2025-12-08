@@ -96,7 +96,7 @@ h3 {
 }
 
 /* === TEXTE CORPS (labels, spans, paragraphes…) === */
- div, span, input, textarea {
+ p, div,label, span, input, textarea {
     font-family: var(--font-body) ;
     letter-spacing: -0.016em ;
 
