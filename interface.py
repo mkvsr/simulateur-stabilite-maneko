@@ -937,8 +937,6 @@ st.markdown("""
 <style>
 /* Style commun du bouton Simulation */
 div.st-key-run_sim button {
-    all: unset !important;
-    color: #FDFFFF !important;
     background-color: #0071E3 !important;
     border: 0px solid #0071E3 !important;
     border-radius: 15px !important;
@@ -960,12 +958,6 @@ div.st-key-run_sim button:hover {
 div.st-key-run_sim button.active-btn {
     border: 2px solid #A3A3AB !important;
     box-shadow: 0 0 0 4px rgba(0,113,227,0.25) !important;
-    color: #FDFFFF !important;
-}
-
-/* Forcer la couleur du texte du bouton */
-div.st-key-run_sim button,
-.stButton > button {
     color: #FDFFFF !important;
 }
 
@@ -1048,6 +1040,7 @@ if run:
 
     with st.expander("Stabilité statique (mode work)"):
         st.json(result["static"]["work"])
+
 
 
 
