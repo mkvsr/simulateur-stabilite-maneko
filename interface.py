@@ -951,7 +951,7 @@ div.st-key-run_sim button {
     padding: 15px !important;
     font-size: 20px !important;
     font-weight: 600 !important;
-    color: #0071E3 !important;
+    color: #FDFFFF !important;
     width: 100% !important;
     transition: all 0.2s ease-in-out !important;
 }
@@ -1045,6 +1045,7 @@ if run:
 
     with st.expander("Stabilité statique (mode work)"):
         st.json(result["static"]["work"])
+
 
 
 
