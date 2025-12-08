@@ -340,7 +340,7 @@ st.markdown("""
 
     /* ----- Fond du menu déroulant (options listées) ----- */
     ul[role="listbox"] {
-        background-color: #D32F2F !important;
+        background-color: #FDFFFF !important;
         border: 2px solid #FCA309 !important;
         border-radius: 6px !important;
     }
@@ -367,7 +367,7 @@ st.markdown("""
 
     /* ----- FIX : fond noir du menu déroulant ----- */
     div[data-baseweb="popover"] {
-        background-color: #D32F2F  !important;   /* fond blanc */
+        background-color: #FDFFFF  !important;   /* fond blanc */
         border-radius: 15px !important;
         border: 2px solid #0071e3 !important;
         overflow: hidden !important;
@@ -1069,6 +1069,7 @@ if run:
 
     with st.expander("Stabilité statique (mode work)"):
         st.json(result["static"]["work"])
+
 
 
 
