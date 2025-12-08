@@ -4,6 +4,20 @@ import os
 import sys
 import base64
 
+import streamlit as st
+
+PASSWORD = "maneko123"
+
+if "auth" not in st.session_state:
+    st.session_state.auth = False
+
+if not st.session_state.auth:
+    pwd = st.text_input("Mot de passe", type="password")
+    if pwd == PASSWORD:
+        st.session_state.auth = True
+    else:
+        st.stop()
+
 if "options" not in st.session_state:
     st.session_state["options"] = {}
 
@@ -1048,5 +1062,6 @@ if run:
 
     with st.expander("Stabilité statique (mode work)"):
         st.json(result["static"]["work"])
+
 
 
