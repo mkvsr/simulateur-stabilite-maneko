@@ -339,7 +339,7 @@ st.markdown("""
 
     /* ----- Fond du menu déroulant (options listées) ----- */
     ul[role="listbox"] {
-        background-color: #FDFFFF !important;
+        background-color: #D32F2F !important;
         border: 2px solid #FCA309 !important;
         border-radius: 6px !important;
     }
@@ -1068,6 +1068,7 @@ if run:
 
     with st.expander("Stabilité statique (mode work)"):
         st.json(result["static"]["work"])
+
 
 
 
