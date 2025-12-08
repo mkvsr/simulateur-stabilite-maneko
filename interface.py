@@ -329,6 +329,7 @@ st.markdown("""
     font-weight: 700 !important;     /* Gras */
     font-family: 'SF Pro Display', sans-serif !important;
     letter-spacing: -0.02em !important;
+    background-color: #D32F2F !important;
     }
 
     /* ----- Texte sélectionné ----- */
@@ -1068,6 +1069,7 @@ if run:
 
     with st.expander("Stabilité statique (mode work)"):
         st.json(result["static"]["work"])
+
 
 
 
