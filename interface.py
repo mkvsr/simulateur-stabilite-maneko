@@ -7,6 +7,16 @@ import base64
 if "options" not in st.session_state:
     st.session_state["options"] = {}
 
+# Masquer le menu, le header et le footer Streamlit
+hide_streamlit_style = """
+<style>
+#MainMenu {visibility: hidden;}
+header {visibility: hidden;}
+footer {visibility: hidden;}
+</style>
+"""
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+
 # --------------------------------------------------------------------
 # Setup chemin pour accéder au solver existant
 # --------------------------------------------------------------------
