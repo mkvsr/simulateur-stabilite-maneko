@@ -447,7 +447,7 @@ div.st-key-loader_on button {
     padding: 15px !important;
     font-size: 20px !important;
     font-weight: 600 !important;
-    color: #1D1D1F !important;
+    color: #FCA309 !important;
     width: 100% !important;
     transition: all 0.2s ease-in-out !important;
     margin-top:0px;
@@ -1040,6 +1040,7 @@ if run:
 
     with st.expander("Stabilité statique (mode work)"):
         st.json(result["static"]["work"])
+
 
 
 
