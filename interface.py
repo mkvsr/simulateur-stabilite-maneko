@@ -7,16 +7,6 @@ import base64
 if "options" not in st.session_state:
     st.session_state["options"] = {}
 
-# Masquer le menu, le header et le footer Streamlit
-hide_streamlit_style = """
-<style>
-#MainMenu {visibility: hidden;}
-header {visibility: hidden;}
-footer {visibility: hidden;}
-</style>
-"""
-st.markdown(hide_streamlit_style, unsafe_allow_html=True)
-
 # --------------------------------------------------------------------
 # Setup chemin pour accéder au solver existant
 # --------------------------------------------------------------------
@@ -96,13 +86,11 @@ h3 {
 }
 
 /* === TEXTE CORPS (labels, spans, paragraphes…) === */
-p, label, span, input, textarea, div:not(.stButton) {
-    font-family: var(--font-body);
-    letter-spacing: -0.016em;
+p, label, span, div, input, textarea {
+    font-family: var(--font-body) ;
+    letter-spacing: -0.016em ;
     margin-top: 0px !important;
     margin-bottom: 0px !important;
-    color: #000000 ;
-    
 }
 
 /* === SELECTBOX & UI WIDGETS === */
@@ -114,7 +102,15 @@ p, label, span, input, textarea, div:not(.stButton) {
     margin-top: 0px !important;
 }
 
-
+/* === SLIDERS (texte + valeur affichée) === */
+[data-testid="stSliderThumbValue"] {
+    font-family: var(--font-ui) !important;
+    font-weight: 400 !important;
+    font-size: 11px !important;
+    letter-spacing: -0.03em !important;
+    color: #D32F2F !important;
+    margin-top: 15px !important;
+}
 
 
 
@@ -162,12 +158,12 @@ div[role="slider"]:hover {
 /* ======== TOOLTIP (valeur affichée au-dessus du thumb) ======== */
 [data-testid="stSliderThumbValue"] {
     background-color: transparent !important;
-    color: #1D1D1F !important;
-    font-size: 8px
+    color: black !important;
+    font-size: 11px
     font-weight: 400 !important;
     border-radius: 6px !important;
     padding: 12px 00px !important;
-    margin-top: -0px !important;
+    margin-top: -15px !important;
 }
 
 
@@ -447,7 +443,7 @@ div.st-key-loader_on button {
     padding: 15px !important;
     font-size: 20px !important;
     font-weight: 600 !important;
-    color: #FCA309 !important;
+    color: #1D1D1F !important;
     width: 100% !important;
     transition: all 0.2s ease-in-out !important;
     margin-top:0px;
@@ -944,6 +940,7 @@ div.st-key-run_sim button {
     padding: 15px !important;
     font-size: 20px !important;
     font-weight: 600 !important;
+    color: #FDFFFF !important;
     width: 100% !important;
     transition: all 0.2s ease-in-out !important;
 }
@@ -951,16 +948,13 @@ div.st-key-run_sim button {
 /* Hover */
 div.st-key-run_sim button:hover {
     border: 0px solid #A3A3AB !important;
-    color: #FDFFFF !important;
 }
 
 /* État actif (halo bleu) */
 div.st-key-run_sim button.active-btn {
     border: 2px solid #A3A3AB !important;
     box-shadow: 0 0 0 4px rgba(0,113,227,0.25) !important;
-    color: #FDFFFF !important;
 }
-
 </style>
 """, unsafe_allow_html=True)
 
@@ -1040,25 +1034,5 @@ if run:
 
     with st.expander("Stabilité statique (mode work)"):
         st.json(result["static"]["work"])
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
