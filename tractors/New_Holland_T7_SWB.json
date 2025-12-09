@@ -1,0 +1,22 @@
+{
+    "name": "New Holland T7 SWB",
+    "brand": "New Holland",
+    "model": "T7 SWB",
+    "mass": 6950.0,
+    "mass_front_pct": 50.0,
+    "mass_rear_pct": 50.0,
+    "tire_defaults": {
+        "front": "540/65R30",
+        "rear": "650/65R38"
+    },
+    "geometry": {
+        "wheelbase": 2.734,
+        "track_front": 2.446,
+        "track_rear": 2.446
+    },
+    "dynamics": {
+        "max_speed_kmh": 40.0,
+        "max_braking_accel": 5.144032921810699,
+        "max_turn_radius": 4.95
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "name": "Valtra SERIE G",
+    "brand": "Valtra",
+    "model": "SERIE G",
+    "mass": 5140.0,
+    "mass_front_pct": 41.0,
+    "mass_rear_pct": 59.0,
+    "tire_defaults": {
+        "front": "380/85R28",
+        "rear": "460/85R38"
+    },
+    "geometry": {
+        "wheelbase": 2.55,
+        "track_front": 2.3,
+        "track_rear": 2.3
+    },
+    "dynamics": {
+        "max_speed_kmh": 40.0,
+        "max_braking_accel": 5.144032921810699,
+        "max_turn_radius": 4.4
+    }
+}

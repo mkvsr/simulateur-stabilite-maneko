@@ -1,0 +1,22 @@
+{
+    "name": "Valtra SERIE A125 - A135",
+    "brand": "Valtra",
+    "model": "SERIE A125 - A135",
+    "mass": 4540.0,
+    "mass_front_pct": 50.0,
+    "mass_rear_pct": 50.0,
+    "tire_defaults": {
+        "front": "380/85R28",
+        "rear": "460/85R38"
+    },
+    "geometry": {
+        "wheelbase": 2.5,
+        "track_front": 2.14,
+        "track_rear": 2.14
+    },
+    "dynamics": {
+        "max_speed_kmh": 40.0,
+        "max_braking_accel": 5.144032921810699,
+        "max_turn_radius": 4.5
+    }
+}

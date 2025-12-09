@@ -1,0 +1,22 @@
+{
+    "name": "Massey Ferguson MF 8S XTRA",
+    "brand": "Massey Ferguson",
+    "model": "MF 8S XTRA",
+    "mass": 10000.0,
+    "mass_front_pct": 50.0,
+    "mass_rear_pct": 50.0,
+    "tire_defaults": {
+        "front": "600/70R30",
+        "rear": "650/65R42"
+    },
+    "geometry": {
+        "wheelbase": 3.05,
+        "track_front": 1.95,
+        "track_rear": 1.95
+    },
+    "dynamics": {
+        "max_speed_kmh": 50.0,
+        "max_braking_accel": 5.358367626886146,
+        "max_turn_radius": 5.7
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "name": "Valtra SERIE A105 - A115",
+    "brand": "Valtra",
+    "model": "SERIE A105 - A115",
+    "mass": 4300.0,
+    "mass_front_pct": 40.0,
+    "mass_rear_pct": 60.0,
+    "tire_defaults": {
+        "front": "340/85R28",
+        "rear": "460/85R34"
+    },
+    "geometry": {
+        "wheelbase": 2.43,
+        "track_front": 2.07,
+        "track_rear": 2.07
+    },
+    "dynamics": {
+        "max_speed_kmh": 40.0,
+        "max_braking_accel": 5.144032921810699,
+        "max_turn_radius": 4.04
+    }
+}

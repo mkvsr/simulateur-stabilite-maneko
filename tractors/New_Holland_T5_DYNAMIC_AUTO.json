@@ -1,0 +1,22 @@
+{
+    "name": "New Holland T5 DYNAMIC AUTO",
+    "brand": "New Holland",
+    "model": "T5 DYNAMIC AUTO",
+    "mass": 5500.0,
+    "mass_front_pct": 50.0,
+    "mass_rear_pct": 50.0,
+    "tire_defaults": {
+        "front": "440/65R24",
+        "rear": "540/65R34"
+    },
+    "geometry": {
+        "wheelbase": 2.49,
+        "track_front": 2.288,
+        "track_rear": 2.288
+    },
+    "dynamics": {
+        "max_speed_kmh": 40.0,
+        "max_braking_accel": 5.144032921810699,
+        "max_turn_radius": 4.615
+    }
+}

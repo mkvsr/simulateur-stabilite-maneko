@@ -1,0 +1,22 @@
+{
+    "name": "Valtra SERIE S",
+    "brand": "Valtra",
+    "model": "SERIE S",
+    "mass": 10300.0,
+    "mass_front_pct": 51.0,
+    "mass_rear_pct": 49.0,
+    "tire_defaults": {
+        "front": "600/65R34",
+        "rear": "710/75R42"
+    },
+    "geometry": {
+        "wheelbase": 3.1,
+        "track_front": 3.105,
+        "track_rear": 2.55
+    },
+    "dynamics": {
+        "max_speed_kmh": 50.0,
+        "max_braking_accel": 5.358367626886146,
+        "max_turn_radius": 7.4
+    }
+}

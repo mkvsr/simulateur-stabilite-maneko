@@ -1,0 +1,22 @@
+{
+    "name": "New Holland T8",
+    "brand": "New Holland",
+    "model": "T8",
+    "mass": 10915.0,
+    "mass_front_pct": 50.0,
+    "mass_rear_pct": 50.0,
+    "tire_defaults": {
+        "front": "520/70R34",
+        "rear": "710/70R42"
+    },
+    "geometry": {
+        "wheelbase": 3.45,
+        "track_front": 2.534,
+        "track_rear": 2.534
+    },
+    "dynamics": {
+        "max_speed_kmh": 50.0,
+        "max_braking_accel": 5.358367626886146,
+        "max_turn_radius": 4.97
+    }
+}

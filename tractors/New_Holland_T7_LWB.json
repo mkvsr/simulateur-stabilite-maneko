@@ -1,0 +1,22 @@
+{
+    "name": "New Holland T7 LWB",
+    "brand": "New Holland",
+    "model": "T7 LWB",
+    "mass": 8400.0,
+    "mass_front_pct": 50.0,
+    "mass_rear_pct": 50.0,
+    "tire_defaults": {
+        "front": "520/70R34",
+        "rear": "710/70R42"
+    },
+    "geometry": {
+        "wheelbase": 2.884,
+        "track_front": 2.55,
+        "track_rear": 2.55
+    },
+    "dynamics": {
+        "max_speed_kmh": 40.0,
+        "max_braking_accel": 5.144032921810699,
+        "max_turn_radius": 6.1
+    }
+}
