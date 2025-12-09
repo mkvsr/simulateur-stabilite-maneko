@@ -63,10 +63,13 @@ st.set_page_config(
     layout="wide"
 )
 
+
 st.markdown("""
 <style>
 /* iPhone vertical */
 @media only screen and (max-width: 812px) {
+
+    
 
     /* Réduction des marges générales */
    # .block-container {
@@ -96,6 +99,24 @@ st.markdown("""
         transform-origin: top left;
     }
 }
+</style>
+""", unsafe_allow_html=True)
+
+st.markdown("""
+<style>
+
+button[kind="secondary"],
+button[kind="primary"],
+button {
+    width: 100% !important;  /* Même largeur que la selectbox */
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+div[data-baseweb="select"] > div {
+    width: 100% !important; /* Force une largeur alignée */
+}
+
 </style>
 """, unsafe_allow_html=True)
 
@@ -1152,6 +1173,7 @@ if run:
 
     with st.expander("Stabilité statique (mode work)"):
         st.json(result["static"]["work"])
+
 
 
 
