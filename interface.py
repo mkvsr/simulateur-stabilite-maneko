@@ -23,35 +23,6 @@ import base64
 if "options" not in st.session_state:
     st.session_state["options"] = {}
 
-#masque menu streamlit manageapp
-st.markdown("""
-<style>
-/* Sécurité : cacher l’élément si Streamlit le charge dans le même DOM */
-button[data-testid="manage-app-button"] {
-    display: none !important;
-}
-</style>
-
-<script>
-// --- Version Streamlit Cloud (élément dans le parent) ---
-const hideManageApp = () => {
-    const doc = window.parent.document;
-    const btn = doc.querySelector('button[data-testid="manage-app-button"]');
-    if (btn) {
-        btn.style.display = "none";
-        btn.style.visibility = "hidden";
-        btn.style.opacity = "0";
-        btn.style.pointerEvents = "none";
-    }
-};
-
-// essais successifs (le bouton est parfois ajouté tardivement)
-setTimeout(hideManageApp, 100);
-setTimeout(hideManageApp, 500);
-setTimeout(hideManageApp, 1500);
-setInterval(hideManageApp, 2000);  // sécurité ultime
-</script>
-""", unsafe_allow_html=True)
 
 
 # Masquer le menu, le header et le footer Streamlit
@@ -91,6 +62,50 @@ st.set_page_config(
     page_icon="assets/manekowhite.ico",
     layout="wide"
 )
+
+# Masquer le menu Sreamlit manageApp
+st.markdown("""
+<style>
+/* Si jamais Streamlit l’injecte dans TON DOM */
+button[data-testid="manage-app-button"],
+button._terminalButton_rix23_138 {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+}
+</style>
+
+<script>
+function hideManageAppButton() {
+    const doc = window.parent.document;
+
+    // 1) Par data-testid
+    let btn = doc.querySelector('button[data-testid="manage-app-button"]');
+    if (btn) {
+        btn.style.display = "none";
+        btn.style.visibility = "hidden";
+        btn.style.opacity = "0";
+        btn.style.pointerEvents = "none";
+    }
+
+    // 2) Par class CSS générée (_terminalButton_rix23_138)
+    let btn2 = doc.querySelector('button[class*="terminalButton"]');
+    if (btn2) {
+        btn2.style.display = "none";
+        btn2.style.visibility = "hidden";
+        btn2.style.opacity = "0";
+        btn2.style.pointerEvents = "none";
+    }
+}
+
+// Plusieurs tentatives car Streamlit recrée parfois l’élément dynamiquement
+setTimeout(hideManageAppButton, 100);
+setTimeout(hideManageAppButton, 400);
+setTimeout(hideManageAppButton, 1000);
+setInterval(hideManageAppButton, 1500);
+</script>
+""", unsafe_allow_html=True)
 
 # ---------------------------------------------------------
 #  CUSTOM GLOBAL FONT (Google Fonts)
@@ -1101,6 +1116,7 @@ if run:
 
     with st.expander("Stabilité statique (mode work)"):
         st.json(result["static"]["work"])
+
 
 
 
