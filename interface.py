@@ -23,6 +23,37 @@ import base64
 if "options" not in st.session_state:
     st.session_state["options"] = {}
 
+#masque menu streamlit manageapp
+st.markdown("""
+<style>
+/* Sécurité : cacher l’élément si Streamlit le charge dans le même DOM */
+button[data-testid="manage-app-button"] {
+    display: none !important;
+}
+</style>
+
+<script>
+// --- Version Streamlit Cloud (élément dans le parent) ---
+const hideManageApp = () => {
+    const doc = window.parent.document;
+    const btn = doc.querySelector('button[data-testid="manage-app-button"]');
+    if (btn) {
+        btn.style.display = "none";
+        btn.style.visibility = "hidden";
+        btn.style.opacity = "0";
+        btn.style.pointerEvents = "none";
+    }
+};
+
+// essais successifs (le bouton est parfois ajouté tardivement)
+setTimeout(hideManageApp, 100);
+setTimeout(hideManageApp, 500);
+setTimeout(hideManageApp, 1500);
+setInterval(hideManageApp, 2000);  // sécurité ultime
+</script>
+""", unsafe_allow_html=True)
+
+
 # Masquer le menu, le header et le footer Streamlit
 hide_streamlit_style = """
 <style>
@@ -684,14 +715,7 @@ div.st-key-water_on button.active-btn {
 </style>
 """, unsafe_allow_html=True)
 
-# ---- HIDE STREAMLIT CLOUD CONTROLS ----
-st.markdown("""
-<style>
-button[data-testid="manage-app-button"] {
-    display:none !important;
-}
-</style>
-""", unsafe_allow_html=True)
+
 
 # -------------------------------------------------
 # Boutons STREAMLIT
@@ -1077,6 +1101,7 @@ if run:
 
     with st.expander("Stabilité statique (mode work)"):
         st.json(result["static"]["work"])
+
 
 
 
