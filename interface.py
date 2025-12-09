@@ -122,7 +122,7 @@ h3 {
 
     margin-top: 0px !important;
     margin-bottom: 0px !important;
-    color: #1D1D1F;
+    color: #FFFFFF;
 }
 
 /* === SELECTBOX & UI WIDGETS === */
