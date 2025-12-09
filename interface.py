@@ -37,7 +37,7 @@ st.markdown("""
     }
 
     /* Titres */
-    h1 { font-size: 20px !important;
+    h1 { font-size: 22px !important;
         margin-top: -100px !important;
         margin-right : 0px !important;
         text-align: left !important;}
@@ -1156,6 +1156,7 @@ if run:
 
     with st.expander("Stabilité statique (mode work)"):
         st.json(result["static"]["work"])
+
 
 
 
