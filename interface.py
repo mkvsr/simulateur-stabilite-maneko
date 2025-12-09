@@ -466,7 +466,7 @@ st.markdown("""
 div.st-key-loader_off button,
 div.st-key-loader_on button {
     background-color: #F6F6F7 !important;
-    border: 0.5px solid #A3A3AB !important; 
+    border: 1px solid #A3A3AB !important; 
     border-radius: 15px !important;
     min-height: 83px !important;      /* Hauteur totale */
     padding: 15px !important;
@@ -645,7 +645,7 @@ st.markdown("""
 div.st-key-water_off button,
 div.st-key-water_on button {
     background-color: #F6F6F7 !important;
-    border: 0.5px solid #A3A3AB !important;
+    border: 1px solid #A3A3AB !important;
     border-radius: 15px !important;
     min-height: 83px !important;      /* Hauteur totale */
     padding: 15px !important;
@@ -800,7 +800,7 @@ st.markdown("""
 div.st-key-tires_auto button,
 div.st-key-tires_manual button {
     background-color: #FFFFFF !important;
-    border: 0.5px solid #A3A3AB !important;
+    border: 1px solid #A3A3AB !important;
     border-radius: 15px !important;
     min-height: 83px !important;
     padding: 15px !important;
@@ -1077,6 +1077,7 @@ if run:
 
     with st.expander("Stabilité statique (mode work)"):
         st.json(result["static"]["work"])
+
 
 
 
