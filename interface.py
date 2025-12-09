@@ -332,7 +332,7 @@ st.markdown("""
 
     /* --- Popover (menu déroulant) : FOND BLANC --- */
     div[data-baseweb="popover"] {
-        background-color: #FFFFFF !important;
+        background-color: #0071E3 !important;
         border-radius: 12px !important;
         border: 1px solid #A3A3AB !important;
     }
@@ -1064,6 +1064,7 @@ if run:
 
     with st.expander("Stabilité statique (mode work)"):
         st.json(result["static"]["work"])
+
 
 
 
