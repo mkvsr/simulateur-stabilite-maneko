@@ -62,27 +62,30 @@ st.set_page_config(
 )
 
 st.markdown("""
-    <link rel="icon" href="assets/manekowhite.ico" media="(prefers-color-scheme: light)">
-    <link rel="icon" href="assets/manekodark.ico" media="(prefers-color-scheme: dark)">
-
     <script>
-        const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
-        const lightIcon = "assets/manekowhite.ico";
-        const darkIcon = "assets/manekodark.ico";
+    const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    const lightIcon = "assets/manekowhite.ico";
+    const darkIcon = "assets/manekodark.ico";
 
-        function updateFavicon() {
-            // Supprime tous les favicons existants
-            document.querySelectorAll("link[rel='icon']").forEach(e => e.remove());
+    function updateFavicon() {
+        // Accès au document parent de Streamlit (obligatoire sur Streamlit Cloud)
+        var doc = window.parent.document;
 
-            // Crée un nouveau favicon selon le thème
-            const newIcon = document.createElement("link");
-            newIcon.rel = "icon";
-            newIcon.href = darkScheme.matches ? darkIcon : lightIcon;
-            document.head.appendChild(newIcon);
-        }
+        // Supprime les favicons existants
+        doc.querySelectorAll("link[rel='icon']").forEach(e => e.remove());
 
-        updateFavicon();
-        darkScheme.addEventListener('change', updateFavicon);
+        // Crée un nouveau favicon
+        const newIcon = doc.createElement("link");
+        newIcon.rel = "icon";
+        newIcon.href = darkScheme.matches ? darkIcon : lightIcon;
+        doc.head.appendChild(newIcon);
+    }
+
+    // Execute immédiatement
+    updateFavicon();
+
+    // Met à jour si l'utilisateur change son thème OS
+    darkScheme.addEventListener('change', updateFavicon);
     </script>
 """, unsafe_allow_html=True)
 
@@ -1090,6 +1093,7 @@ if run:
 
     with st.expander("Stabilité statique (mode work)"):
         st.json(result["static"]["work"])
+
 
 
 
