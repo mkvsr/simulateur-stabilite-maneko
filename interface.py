@@ -199,7 +199,7 @@ div[role="slider"]:hover {
         background: #FFFFFF !important;  /* Couleur Maneko */
         height: 4px !important;
         border-radius: 3px !important;
-        font-size: 8px !important;
+        font-size: 10px !important;
     }
 
     /* 2️⃣ Portion active (track sélectionnée) */
@@ -1062,6 +1062,7 @@ if run:
 
     with st.expander("Stabilité statique (mode work)"):
         st.json(result["static"]["work"])
+
 
 
 
