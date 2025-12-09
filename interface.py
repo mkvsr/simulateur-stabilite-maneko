@@ -77,7 +77,7 @@ st.markdown("""
     /* Réduction globale des tailles de texte */
     html, body, .stApp {
         -webkit-text-size-adjust: 90% !important;
-        font-size: 11px !important;
+        font-size: 14px !important;
     }
 
     /* Titres */
@@ -1153,6 +1153,7 @@ if run:
 
     with st.expander("Stabilité statique (mode work)"):
         st.json(result["static"]["work"])
+
 
 
 
