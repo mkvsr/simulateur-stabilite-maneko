@@ -63,6 +63,42 @@ st.set_page_config(
     layout="wide"
 )
 
+st.markdown("""
+<style>
+/* iPhone vertical */
+@media only screen and (max-width: 812px) {
+
+    /* Réduction des marges générales */
+    .block-container {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+
+    /* Réduction globale des tailles de texte */
+    html, body, .stApp {
+        -webkit-text-size-adjust: 90% !important;
+        font-size: 14px !important;
+    }
+
+    /* Titres */
+    h1 { font-size: 28px !important; }
+    h2 { font-size: 22px !important; }
+    h3 { font-size: 16px !important; }
+
+    /* Boutons */
+    button {
+        transform: scale(0.9) !important;
+    }
+
+    /* Selectbox */
+    div[data-baseweb="select"] > div {
+        transform: scale(0.95);
+        transform-origin: top left;
+    }
+}
+</style>
+""", unsafe_allow_html=True)
+
 # Masquer le menu Sreamlit manageApp
 st.markdown("""
 <style>
@@ -1116,6 +1152,7 @@ if run:
 
     with st.expander("Stabilité statique (mode work)"):
         st.json(result["static"]["work"])
+
 
 
 
