@@ -28,6 +28,15 @@ st.markdown("""
       content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 """, unsafe_allow_html=True)
 
+st.markdown("""
+<style>
+/* Empêche Safari iPhone de zoomer automatiquement sur inputs <16px */
+input, select, textarea {
+    font-size: 16px !important;
+}
+</style>
+""", unsafe_allow_html=True)
+
 # Masquer le menu, le header et le footer Streamlit
 hide_streamlit_style = """
 <style>
@@ -1119,6 +1128,7 @@ if run:
 
     with st.expander("Stabilité statique (mode work)"):
         st.json(result["static"]["work"])
+
 
 
 
