@@ -206,6 +206,7 @@ div[role="slider"]:hover {
         border: 0.5px solid #A3A3AB !important;
         border-radius: 4px !important;
         height: 6px !important;  /* augmenter pour rendre visible */
+        font-size: 8px !important;
     }
 
     /* 3️⃣ Désactive totalement le gradient auto qui revient après mouvement */
@@ -1060,6 +1061,7 @@ if run:
 
     with st.expander("Stabilité statique (mode work)"):
         st.json(result["static"]["work"])
+
 
 
 
