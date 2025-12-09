@@ -92,7 +92,7 @@ st.markdown("""
 
     /* Selectbox */
     div[data-baseweb="select"] > div {
-        transform: scale(0.95);
+        transform: scale(0.9);
         transform-origin: top left;
     }
 }
@@ -1152,6 +1152,7 @@ if run:
 
     with st.expander("Stabilité statique (mode work)"):
         st.json(result["static"]["work"])
+
 
 
 
