@@ -3,6 +3,7 @@
     "brand": "Claas",
     "model": "ARION 400",
     "mass": 5000.0,
+    "ptac": 11000.0,
     "mass_front_pct": 50.0,
     "mass_rear_pct": 50.0,
     "tire_defaults": {
