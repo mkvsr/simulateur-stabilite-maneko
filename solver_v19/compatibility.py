@@ -90,9 +90,9 @@ def check_compatibility(data):
     # 4. Roue avant ou arrière délestée interdite
     # -------------------------------------------------------------------
     if FL <= 0 or FR <= 0:
-        status = "⛔ Danger ⛔"
+        status = "⛔ Danger"
     else:
-        status = "✅ OK ✅"
+        status = "✅ OK"
     results.append({
         "name": "Aucune roue avant délestée",
         "value": min(FL, FR),
@@ -102,9 +102,9 @@ def check_compatibility(data):
     })
         
     if RL <= 0 or RR <= 0:
-        status = "⛔ Danger ⛔"
+        status = "⛔ Danger"
     else:
-        status = "✅ OK ✅"
+        status = "✅ OK"
     results.append({
         "name": "Aucune roue arrière délestée",
         "value": min(RL, RR),
@@ -175,4 +175,5 @@ def check_compatibility(data):
     })
 
     return results
+
 
