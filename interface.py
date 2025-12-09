@@ -684,6 +684,15 @@ div.st-key-water_on button.active-btn {
 </style>
 """, unsafe_allow_html=True)
 
+# ---- HIDE STREAMLIT CLOUD CONTROLS ----
+st.markdown("""
+<style>
+button[data-testid="manage-app-button"] {
+    display:none !important;
+}
+</style>
+""", unsafe_allow_html=True)
+
 # -------------------------------------------------
 # Boutons STREAMLIT
 # -------------------------------------------------
@@ -1068,6 +1077,7 @@ if run:
 
     with st.expander("Stabilité statique (mode work)"):
         st.json(result["static"]["work"])
+
 
 
 
