@@ -1069,54 +1069,6 @@ if run:
     with st.expander("Stabilité statique (mode work)"):
         st.json(result["static"]["work"])
 
-st.markdown("""
-<style>
-/* Cacher le bouton "Manage app" sur Streamlit Cloud */
-button[data-testid="manage-app-button"] {
-    display: none !important;
-    visibility: hidden !important;
-    opacity: 0 !important;
-    pointer-events: none !important;
-}
-</style>
-""", unsafe_allow_html=True)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
