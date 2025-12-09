@@ -272,19 +272,27 @@ BLUE = "#0071e3"
 BASE_PATH = os.path.dirname(__file__)
 logo_path = os.path.join(BASE_PATH, "assets/logo_maneko.png")
 
+# --------------------------------------------------------------------
+# Logo Maneko (cliquable)
+# --------------------------------------------------------------------
+BASE_PATH = os.path.dirname(__file__)
+logo_path = os.path.join(BASE_PATH, "assets/logo_maneko.png")
+
 # Convertir en base64
 with open(logo_path, "rb") as f:
     img_data = base64.b64encode(f.read()).decode()
 
-# Affichage HTML
+# Affichage HTML cliquable
 st.markdown(
     f"""
-    <img src="data:image/png;base64,{img_data}" 
-         style="position:absolute; top:0px; left:00px; width:100px; margin-top:-100px;">
+    <a href="https://www.maneko.fr" target="_blank">
+        <img src="data:image/png;base64,{img_data}" 
+             style="position:absolute; top:0px; left:0px; 
+                    width:100px; margin-top:-100px;">
+    </a>
     """,
     unsafe_allow_html=True
 )
-
 
 # --------------------------------------------------------------------
 # Gestion du titre
@@ -1064,6 +1072,7 @@ if run:
 
     with st.expander("Stabilité statique (mode work)"):
         st.json(result["static"]["work"])
+
 
 
 
