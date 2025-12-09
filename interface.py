@@ -57,7 +57,7 @@ from solver_v19.solver import select_loader_name
 # --------------------------------------------------------------------
 st.set_page_config(
     page_title="Simulateur de Stabilité - MANEKO",
-    page_icon="assets/manekowhite.ico",
+    #page_icon="assets/manekowhite.ico",
     layout="wide"
 )
 
@@ -1069,6 +1069,7 @@ if run:
 
     with st.expander("Stabilité statique (mode work)"):
         st.json(result["static"]["work"])
+
 
 
 
