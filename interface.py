@@ -312,9 +312,17 @@ st.markdown("""
     /* --- Forcer le fond clair du conteneur principal SELECT --- */
     div[data-baseweb="select"] > div {
         background-color: #FFFFFF !important;
+        min-height: 83px !important;      /* Hauteur totale */
+        min-width: 100% !important;      /* largeur totale */
+        padding: 0px 10px !important;
         color: #1D1D1F !important;
+        font-weight: 600 !important;
+        font-size: 17px !important;
+        letter-spacing: -0.03em !important;
         border-radius: 12px !important;
         border: 1px solid #A3A3AB !important;
+        display: flex;
+        align-items: center;
     }
 
     /* --- Nettoyage du label interne --- */
@@ -1056,6 +1064,7 @@ if run:
 
     with st.expander("Stabilité statique (mode work)"):
         st.json(result["static"]["work"])
+
 
 
 
