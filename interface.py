@@ -32,7 +32,7 @@ st.markdown("""
 <style>
 /* Empêche Safari iPhone de zoomer automatiquement sur inputs <16px */
 input, select, textarea {
-    font-size: 16px !important;
+    font-size: 11px !important;
 }
 </style>
 """, unsafe_allow_html=True)
@@ -1128,6 +1128,7 @@ if run:
 
     with st.expander("Stabilité statique (mode work)"):
         st.json(result["static"]["work"])
+
 
 
 
