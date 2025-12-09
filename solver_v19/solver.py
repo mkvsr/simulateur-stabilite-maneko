@@ -166,7 +166,8 @@ def solve(tractor, machine, loader, tires, options, env):
             "I_long": static["work"]["I_long"],
             "total_mass": CG_data["work"]["mass_total"],
             "machine_mass": machine.get("mass", 0),
-            "tractor_mass": tractor.get("mass", 0)
+            "tractor_mass": tractor.get("mass", 0),
+            "ptac": tractor.get("ptac", None)
         })
 
         result["compatibility"] = compat
@@ -176,3 +177,4 @@ def solve(tractor, machine, loader, tires, options, env):
         result["compatibility"] = []
 
     return result
+
