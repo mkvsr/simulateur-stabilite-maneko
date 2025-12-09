@@ -99,26 +99,6 @@ st.markdown("""
         transform-origin: top left;
     }
 }
-</style>
-""", unsafe_allow_html=True)
-
-st.markdown("""
-<style>
-
-button[kind="secondary"],
-button[kind="primary"],
-button {
-    width: 100% !important;  /* Même largeur que la selectbox */
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-}
-
-div[data-baseweb="select"] > div {
-    width: 100% !important; /* Force une largeur alignée */
-}
-
-</style>
-""", unsafe_allow_html=True)
 
 # Masquer le menu Sreamlit manageApp
 st.markdown("""
@@ -474,6 +454,25 @@ st.markdown("""
         color: #FFFFFF !important;
         font-weight: 400 !important;
     }
+
+</style>
+""", unsafe_allow_html=True)
+
+
+st.markdown("""
+<style>
+
+button[kind="secondary"],
+button[kind="primary"],
+button {
+    width: 100% !important;  /* Même largeur que la selectbox */
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+div[data-baseweb="select"] > div {
+    width: 100% !important; /* Force une largeur alignée */
+}
 
 </style>
 """, unsafe_allow_html=True)
@@ -1173,6 +1172,7 @@ if run:
 
     with st.expander("Stabilité statique (mode work)"):
         st.json(result["static"]["work"])
+
 
 
 
