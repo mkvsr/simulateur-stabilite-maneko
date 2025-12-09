@@ -1052,7 +1052,7 @@ if run:
             status_color = WARN_ORANGE
 
         st.markdown(
-            f"<p style='color:{status_color};;font-size:20px;font-weight:400;'>"
+            f"<p style='color:{status_color};;font-size:17px;font-weight:600;'>"
             f"{crit['status']} — {crit['name']} "
             f"</p>",
             unsafe_allow_html=True
@@ -1066,6 +1066,7 @@ if run:
 
     with st.expander("Stabilité statique (mode work)"):
         st.json(result["static"]["work"])
+
 
 
 
