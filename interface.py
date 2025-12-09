@@ -171,7 +171,7 @@ h1 {
     font-size: 42px ;
     letter-spacing: -0.03em !important;
     color: #1D1D1F !important;
-    margin-top: -100px ;
+    margin-top: -100px !important;
     text-align: center ;
 }
 
@@ -1158,6 +1158,7 @@ if run:
 
     with st.expander("Stabilité statique (mode work)"):
         st.json(result["static"]["work"])
+
 
 
 
