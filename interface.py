@@ -327,7 +327,7 @@ st.markdown("""
 
     /* --- Nettoyage du label interne --- */
     div[data-baseweb="select"] span {
-        color: #1D1D1F !important;
+        color: #FFFFFF !important;
     }
 
     /* --- Popover (menu déroulant) : FOND BLANC --- */
@@ -1060,6 +1060,7 @@ if run:
 
     with st.expander("Stabilité statique (mode work)"):
         st.json(result["static"]["work"])
+
 
 
 
