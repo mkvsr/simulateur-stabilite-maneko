@@ -350,7 +350,7 @@ st.markdown("""
     /* --- Option individuelle --- */
     li[role="option"] {
         background-color: #FFFFFF !important;
-        color: #1D1D1F !important;
+        color: #FFFFFF !important;
         padding: 8px 12px !important;
         font-size: 16px !important;
     }
@@ -1060,6 +1060,7 @@ if run:
 
     with st.expander("Stabilité statique (mode work)"):
         st.json(result["static"]["work"])
+
 
 
 
