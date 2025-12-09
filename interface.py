@@ -37,7 +37,7 @@ st.markdown("""
     }
 
     /* Titres */
-    h1 { font-size: 28px !important; }
+    h1 { font-size: 12px !important; }
     h2 { font-size: 22px !important; }
     h3 { font-size: 16px !important; }
 
@@ -52,7 +52,7 @@ st.markdown("""
     }
 
     #main-title {
-          font-size: 28px !important;
+          font-size: 10px !important;
           margin-top: 0px !important;
       }
 }
@@ -172,6 +172,7 @@ h1 {
     letter-spacing: -0.03em !important;
     color: #1D1D1F !important;
     margin-top: -100px !important;
+    text-align: center !important;
 }
 
 h2 {
@@ -1157,6 +1158,7 @@ if run:
 
     with st.expander("Stabilité statique (mode work)"):
         st.json(result["static"]["work"])
+
 
 
 
