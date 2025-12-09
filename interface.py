@@ -81,9 +81,9 @@ st.markdown("""
     }
 
     /* Titres */
-    h1 { font-size: 28px !important; }
-    h2 { font-size: 22px !important; }
-    h3 { font-size: 16px !important; }
+    h1 { font-size: 22px !important; }
+    h2 { font-size: 16px !important; }
+    h3 { font-size: 14px !important; }
 
     /* Boutons */
     button {
@@ -1152,6 +1152,7 @@ if run:
 
     with st.expander("Stabilité statique (mode work)"):
         st.json(result["static"]["work"])
+
 
 
 
