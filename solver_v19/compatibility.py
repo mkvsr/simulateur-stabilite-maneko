@@ -174,6 +174,20 @@ def check_compatibility(data):
         #"source": "Constructeurs (Claas, MF, CNH)"
     })
 
+    # -------------------------------------------------------------------
+    # 8. PTAC — Poids Total Autorisé en Charge
+    # -------------------------------------------------------------------
+    ptac = data.get("ptac", None)
+    if ptac is not None:
+        status_ptac = classify(total, ptac, "max")
+        results.append({
+            "name": "Masse totale ≤ PTAC constructeur",
+            "value": total,
+            "limit": ptac,
+            "status": status_ptac
+        })
+
     return results
+
 
 
