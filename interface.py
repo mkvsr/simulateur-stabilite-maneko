@@ -61,6 +61,33 @@ st.set_page_config(
     layout="wide"
 )
 
+st.markdown("""
+    <link rel="icon" href="assets/favicon_light.png" media="(prefers-color-scheme: light)">
+    <link rel="icon" href="assets/favicon_dark.png" media="(prefers-color-scheme: dark)">
+    
+    <!-- Pour compatibilité maximale -->
+    <script>
+        const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+        const lightIcon = "assets/favicon_light.png";
+        const darkIcon = "assets/favicon_dark.png";
+
+        function updateFavicon() {
+            const favicon = document.querySelector("link[rel='icon']");
+            if (darkScheme.matches) {
+                favicon.href = darkIcon;
+            } else {
+                favicon.href = lightIcon;
+            }
+        }
+
+        updateFavicon();
+        darkScheme.addEventListener('change', updateFavicon);
+    </script>
+    """,
+    unsafe_allow_html=True
+)
+
+
 # ---------------------------------------------------------
 #  CUSTOM GLOBAL FONT (Google Fonts)
 # ---------------------------------------------------------
@@ -1064,6 +1091,7 @@ if run:
 
     with st.expander("Stabilité statique (mode work)"):
         st.json(result["static"]["work"])
+
 
 
 
