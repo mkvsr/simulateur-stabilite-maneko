@@ -63,32 +63,6 @@ st.set_page_config(
     layout="wide"
 )
 
-st.markdown("""
-<style>
-/* iPhone portrait */
-@media only screen 
-  and (max-device-width: 812px)
-  and (orientation: portrait) {
-
-    body, .stApp {
-        zoom: 0.80;   /* Réduit tout à 85% */
-        -webkit-text-size-adjust: 80%;
-    }
-}
-
-/* iPhone paysage */
-@media only screen 
-  and (max-device-width: 812px)
-  and (orientation: landscape) {
-
-    body, .stApp {
-        zoom: 0.90;
-        -webkit-text-size-adjust: 90%;
-    }
-}
-</style>
-""", unsafe_allow_html=True)
-
 # Masquer le menu Sreamlit manageApp
 st.markdown("""
 <style>
@@ -1142,6 +1116,7 @@ if run:
 
     with st.expander("Stabilité statique (mode work)"):
         st.json(result["static"]["work"])
+
 
 
 
