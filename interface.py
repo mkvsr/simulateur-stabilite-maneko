@@ -37,7 +37,9 @@ st.markdown("""
     }
 
     /* Titres */
-    h1 { font-size: 26px !important; }
+    h1 { font-size: 26px !important;
+        margin-top: 0px !important;
+        text-align: center !important;}
     h2 { font-size: 18px !important; }
     h3 { font-size: 12px !important; }
 
@@ -166,8 +168,8 @@ h1 {
     font-size: 42px ;
     letter-spacing: -0.03em !important;
     color: #1D1D1F !important;
-    margin-top: -100px !important;
-    text-align: center !important;
+    margin-top: -100px ;
+    text-align: center ;
 }
 
 h2 {
@@ -1153,6 +1155,7 @@ if run:
 
     with st.expander("Stabilité statique (mode work)"):
         st.json(result["static"]["work"])
+
 
 
 
