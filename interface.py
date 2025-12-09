@@ -37,7 +37,7 @@ st.markdown("""
     }
 
     /* Titres */
-    h1 { font-size: 12px !important; }
+    h1 { font-size: 22px !important; }
     h2 { font-size: 22px !important; }
     h3 { font-size: 16px !important; }
 
@@ -50,11 +50,6 @@ st.markdown("""
     div[data-baseweb="select"] > div {
         transform: scale(0.90);
     }
-
-    #main-title {
-          font-size: 10px !important;
-          margin-top: 0px !important;
-      }
 }
 </style>
 """, unsafe_allow_html=True)
@@ -1158,6 +1153,7 @@ if run:
 
     with st.expander("Stabilité statique (mode work)"):
         st.json(result["static"]["work"])
+
 
 
 
