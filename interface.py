@@ -430,6 +430,7 @@ for file in machine_files:
     key = file.replace(".json", "")                       # identifiant interne
     machine_display.append(pretty)
     machine_map[pretty] = key
+    machine_display = sorted(machine_display)
 
 # Selectbox — affiche les noms lisibles
 selected_machine_pretty = st.selectbox("Choisir une machine", machine_display)
@@ -591,6 +592,7 @@ if loader_enabled:
 
     loader_files = os.listdir("loaders")
     loader_list = [f.replace(".json", "") for f in loader_files if f.endswith(".json")]
+    loader_list = sorted(loader_list)
 
     # Selectbox avec valeur persistante
     st.selectbox(
@@ -1064,6 +1066,7 @@ if run:
 
     with st.expander("Stabilité statique (mode work)"):
         st.json(result["static"]["work"])
+
 
 
 
