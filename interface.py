@@ -25,7 +25,7 @@ if "options" not in st.session_state:
 
 st.markdown("""
 <meta name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+      content="width=device-width, initial-scale=1, maximum-scale=0.5, user-scalable=no">
 """, unsafe_allow_html=True)
 
 st.markdown("""
@@ -1128,6 +1128,7 @@ if run:
 
     with st.expander("Stabilité statique (mode work)"):
         st.json(result["static"]["work"])
+
 
 
 
