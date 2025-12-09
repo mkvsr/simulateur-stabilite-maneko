@@ -4,8 +4,6 @@ import os
 import sys
 import base64
 
-import streamlit as st
-
 #PASSWORD = "maneko"
 
 #if "auth" not in st.session_state:
@@ -117,7 +115,6 @@ h3 {
  p, div,label, span, input, textarea {
     font-family: var(--font-body) ;
     letter-spacing: -0.016em ;
-
     margin-top: 0px !important;
     margin-bottom: 0px !important;
     color: #FFFFFF;
@@ -1067,6 +1064,7 @@ if run:
 
     with st.expander("Stabilité statique (mode work)"):
         st.json(result["static"]["work"])
+
 
 
 
