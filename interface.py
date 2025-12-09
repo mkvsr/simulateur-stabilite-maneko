@@ -475,7 +475,7 @@ div.st-key-loader_on button {
     color: #1D1D1F !important;
     width: 100% !important;
     transition: all 0.2s ease-in-out !important;
-    margin-top:3px;
+    margin-top:0px;
     margin-bottom:0px;
 }
 
@@ -654,7 +654,7 @@ div.st-key-water_on button {
     color: #1D1D1F !important;
     width: 100% !important;
     transition: all 0.2s ease-in-out !important;
-    margin-top:3px;
+    margin-top:0px;
     margin-bottom:0px;
 }
 
@@ -809,7 +809,7 @@ div.st-key-tires_manual button {
     color: #1D1D1F !important;
     width: 100% !important;
     transition: all 0.2s ease-in-out !important;
-    margin-top:3px;
+    margin-top:0px;
     margin-bottom:0px;
 }
 
@@ -1077,6 +1077,7 @@ if run:
 
     with st.expander("Stabilité statique (mode work)"):
         st.json(result["static"]["work"])
+
 
 
 
