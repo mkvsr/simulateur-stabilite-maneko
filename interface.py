@@ -33,23 +33,23 @@ st.markdown("""
     /* Réduction globale des tailles de texte */
     html, body, .stApp {
         -webkit-text-size-adjust: 90% !important;
-        font-size: 14px !important;
+#        font-size: 14px !important;
     }
 
     /* Titres */
-    h1 { font-size: 22px !important; }
-    h2 { font-size: 22px !important; }
-    h3 { font-size: 16px !important; }
+    h1 { font-size: 26px !important; }
+    h2 { font-size: 18px !important; }
+    h3 { font-size: 12px !important; }
 
-    /* Boutons */
-    button {
-        transform: scale(0.9) !important;
-    }
+#    /* Boutons */
+#    button {
+#        transform: scale(0.9) !important;
+#    }
 
-    /* Selectbox */
-    div[data-baseweb="select"] > div {
-        transform: scale(0.90);
-    }
+#    /* Selectbox */
+#    div[data-baseweb="select"] > div {
+#        transform: scale(0.90);
+#    }
 }
 </style>
 """, unsafe_allow_html=True)
@@ -1153,6 +1153,7 @@ if run:
 
     with st.expander("Stabilité statique (mode work)"):
         st.json(result["static"]["work"])
+
 
 
 
