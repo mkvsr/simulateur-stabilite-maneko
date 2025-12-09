@@ -62,30 +62,29 @@ st.set_page_config(
 )
 
 st.markdown("""
-    <link rel="icon" href="assets/favicon_light.png" media="(prefers-color-scheme: light)">
-    <link rel="icon" href="assets/favicon_dark.png" media="(prefers-color-scheme: dark)">
-    
-    <!-- Pour compatibilité maximale -->
+    <link rel="icon" href="assets/manekowhite.ico" media="(prefers-color-scheme: light)">
+    <link rel="icon" href="assets/manekodark.ico" media="(prefers-color-scheme: dark)">
+
     <script>
         const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
-        const lightIcon = "assets/favicon_light.png";
-        const darkIcon = "assets/favicon_dark.png";
+        const lightIcon = "assets/manekowhite.ico";
+        const darkIcon = "assets/manekodark.ico";
 
         function updateFavicon() {
-            const favicon = document.querySelector("link[rel='icon']");
-            if (darkScheme.matches) {
-                favicon.href = darkIcon;
-            } else {
-                favicon.href = lightIcon;
-            }
+            // Supprime tous les favicons existants
+            document.querySelectorAll("link[rel='icon']").forEach(e => e.remove());
+
+            // Crée un nouveau favicon selon le thème
+            const newIcon = document.createElement("link");
+            newIcon.rel = "icon";
+            newIcon.href = darkScheme.matches ? darkIcon : lightIcon;
+            document.head.appendChild(newIcon);
         }
 
         updateFavicon();
         darkScheme.addEventListener('change', updateFavicon);
     </script>
-    """,
-    unsafe_allow_html=True
-)
+""", unsafe_allow_html=True)
 
 
 # ---------------------------------------------------------
@@ -1091,6 +1090,7 @@ if run:
 
     with st.expander("Stabilité statique (mode work)"):
         st.json(result["static"]["work"])
+
 
 
 
