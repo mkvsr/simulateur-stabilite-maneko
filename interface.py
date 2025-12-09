@@ -68,12 +68,6 @@ st.markdown("""
 /* iPhone vertical */
 @media only screen and (max-width: 812px) {
 
-    /* Réduction des marges générales */
-    .block-container {
-        padding-left: 0px !important;
-        padding-right: 0px !important;
-    }
-
     /* Réduction globale des tailles de texte */
     html, body, .stApp {
         -webkit-text-size-adjust: 90% !important;
@@ -1153,6 +1147,7 @@ if run:
 
     with st.expander("Stabilité statique (mode work)"):
         st.json(result["static"]["work"])
+
 
 
 
