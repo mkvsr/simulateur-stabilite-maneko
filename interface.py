@@ -70,8 +70,8 @@ st.markdown("""
 
     /* Réduction des marges générales */
     .block-container {
-        padding-left: 10px !important;
-        padding-right: 10px !important;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
     }
 
     /* Réduction globale des tailles de texte */
@@ -1152,6 +1152,7 @@ if run:
 
     with st.expander("Stabilité statique (mode work)"):
         st.json(result["static"]["work"])
+
 
 
 
