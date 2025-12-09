@@ -64,15 +64,27 @@ st.set_page_config(
 )
 
 st.markdown("""
-<meta name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=0.5, user-scalable=no">
-""", unsafe_allow_html=True)
-
-st.markdown("""
 <style>
-/* Empêche Safari iPhone de zoomer automatiquement sur inputs <16px */
-input, select, textarea {
-    font-size: 16px !important;
+/* iPhone portrait */
+@media only screen 
+  and (max-device-width: 812px)
+  and (orientation: portrait) {
+
+    body, .stApp {
+        zoom: 0.85;   /* Réduit tout à 85% */
+        -webkit-text-size-adjust: 85%;
+    }
+}
+
+/* iPhone paysage */
+@media only screen 
+  and (max-device-width: 812px)
+  and (orientation: landscape) {
+
+    body, .stApp {
+        zoom: 0.90;
+        -webkit-text-size-adjust: 90%;
+    }
 }
 </style>
 """, unsafe_allow_html=True)
@@ -1130,6 +1142,7 @@ if run:
 
     with st.expander("Stabilité statique (mode work)"):
         st.json(result["static"]["work"])
+
 
 
 
