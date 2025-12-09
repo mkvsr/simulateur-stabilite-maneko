@@ -397,6 +397,7 @@ for file in tractor_files:
     key = file.replace(".json", "")                       # identifiant interne
     tractor_display.append(pretty)
     tractor_map[pretty] = key
+    tractor_display = sorted(tractor_display)
 
 # Selectbox : montre le vrai nom lisible
 selected_pretty = st.selectbox("Choisir un tracteur", tractor_display)
@@ -1063,6 +1064,7 @@ if run:
 
     with st.expander("Stabilité statique (mode work)"):
         st.json(result["static"]["work"])
+
 
 
 
