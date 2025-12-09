@@ -71,8 +71,8 @@ st.markdown("""
   and (orientation: portrait) {
 
     body, .stApp {
-        zoom: 0.85;   /* Réduit tout à 85% */
-        -webkit-text-size-adjust: 85%;
+        zoom: 0.80;   /* Réduit tout à 85% */
+        -webkit-text-size-adjust: 80%;
     }
 }
 
@@ -1142,6 +1142,7 @@ if run:
 
     with st.expander("Stabilité statique (mode work)"):
         st.json(result["static"]["work"])
+
 
 
 
