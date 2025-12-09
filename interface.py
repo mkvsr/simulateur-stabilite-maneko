@@ -23,7 +23,10 @@ import base64
 if "options" not in st.session_state:
     st.session_state["options"] = {}
 
-
+st.markdown("""
+<meta name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+""", unsafe_allow_html=True)
 
 # Masquer le menu, le header et le footer Streamlit
 hide_streamlit_style = """
@@ -1116,6 +1119,7 @@ if run:
 
     with st.expander("Stabilité statique (mode work)"):
         st.json(result["static"]["work"])
+
 
 
 
