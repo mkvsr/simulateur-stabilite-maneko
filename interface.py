@@ -64,9 +64,6 @@ st.set_page_config(
 )
 
 
-</style>
-""", unsafe_allow_html=True)
-
 # Masquer le menu Sreamlit manageApp
 st.markdown("""
 <style>
@@ -1121,6 +1118,7 @@ if run:
 
     with st.expander("Stabilité statique (mode work)"):
         st.json(result["static"]["work"])
+
 
 
 
