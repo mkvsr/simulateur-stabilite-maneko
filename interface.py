@@ -29,11 +29,6 @@ st.markdown("""
 /* iPhone vertical */
 @media only screen and (max-width: 812px) {
 
-    /* Réduction des marges générales */
-    .block-container {
-        padding-left: 10px !important;
-        padding-right: 10px !important;
-    }
 
     /* Réduction globale des tailles de texte */
     html, body, .stApp {
@@ -53,9 +48,13 @@ st.markdown("""
 
     /* Selectbox */
     div[data-baseweb="select"] > div {
-        transform: scale(0.95);
-        transform-origin: top left;
+        transform: scale(0.90);
     }
+
+    #main-title {
+          font-size: 28px !important;
+          margin-top: 0px !important;
+      }
 }
 </style>
 """, unsafe_allow_html=True)
@@ -383,10 +382,14 @@ st.markdown(
 # --------------------------------------------------------------------
 # Gestion du titre
 # --------------------------------------------------------------------
-st.markdown(f"""
-    <h1 style='color:{BLACK};text-align:center;font-weight:700;'>
-        Personnalisez votre simulation
-    </h1>
+#st.markdown(f"""
+#    <h1 style='color:{BLACK};text-align:center;font-weight:700;'>
+#        Personnalisez votre simulation
+#    </h1>
+#""", unsafe_allow_html=True)
+
+st.markdown("""
+<h1 id="main-title">Personnalisez votre simulation</h1>
 """, unsafe_allow_html=True)
 
 # --------------------------------------------------------------------
@@ -1154,6 +1157,7 @@ if run:
 
     with st.expander("Stabilité statique (mode work)"):
         st.json(result["static"]["work"])
+
 
 
 
