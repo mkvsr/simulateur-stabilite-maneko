@@ -455,7 +455,8 @@ st.markdown("""
     }
 
 </style>
-""", unsafe_allow_html=True)
+""", unsafe_allow_html=True
+)
 
 
 # ---------------------------------------------------------
@@ -1152,6 +1153,7 @@ if run:
 
     with st.expander("Stabilité statique (mode work)"):
         st.json(result["static"]["work"])
+
 
 
 
