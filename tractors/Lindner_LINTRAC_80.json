@@ -13,7 +13,6 @@
         "wheelbase": 2.264,
         "track_front": 1,978,
         "track_rear": 1,978
-
     },
     "dynamics": {
         "max_speed_kmh": 40.0,
