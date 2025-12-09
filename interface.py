@@ -335,13 +335,9 @@ st.markdown("""
         background-color: transparent !important;
         border-radius: 12px !important;
         border: 1px solid #A3A3AB !important;
+        color: #FFFFFF !important;
     }
 
-    /* Contenu interne du popover */
-    div[data-baseweb="popover"] * {
-        background-color: transparent !important;
-        color: #1D1D1F !important;
-    }
 
     /* --- Liste UL des options --- */
     ul[role="listbox"] {
@@ -1064,6 +1060,7 @@ if run:
 
     with st.expander("Stabilité statique (mode work)"):
         st.json(result["static"]["work"])
+
 
 
 
