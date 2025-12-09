@@ -57,14 +57,9 @@ from solver_v19.solver import select_loader_name
 # --------------------------------------------------------------------
 st.set_page_config(
     page_title="Simulateur de Stabilité - MANEKO",
-    #page_icon="assets/manekowhite.ico",
+    page_icon="assets/manekowhite.ico",
     layout="wide"
 )
-
-st.markdown("""
-    <link rel="icon" href="assets/manekowhite.ico" media="(prefers-color-scheme: light)">
-    <link rel="icon" href="assets/manekodark.ico" media="(prefers-color-scheme: dark)">
-""", unsafe_allow_html=True)
 
 # ---------------------------------------------------------
 #  CUSTOM GLOBAL FONT (Google Fonts)
@@ -1069,6 +1064,7 @@ if run:
 
     with st.expander("Stabilité statique (mode work)"):
         st.json(result["static"]["work"])
+
 
 
 
