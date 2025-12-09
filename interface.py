@@ -4,21 +4,6 @@ import os
 import sys
 import base64
 
-#PASSWORD = "maneko"
-
-#if "auth" not in st.session_state:
-#    st.session_state.auth = False
-
-# Affichage du champ mot de passe uniquement si pas authentifié
-#if not st.session_state.auth:
-#    st.markdown("<h3>🔒 Accès sécurisé</h3>", unsafe_allow_html=True)
-#    pwd = st.text_input("Entrez le mot de passe :", type="password")
-
-#    if pwd == PASSWORD:
-#        st.session_state.auth = True
-#        st.rerun()  # Recharger l’interface après connexion
-
-#    st.stop()
 
 if "options" not in st.session_state:
     st.session_state["options"] = {}
@@ -1064,6 +1049,7 @@ if run:
 
     with st.expander("Stabilité statique (mode work)"):
         st.json(result["static"]["work"])
+
 
 
 
