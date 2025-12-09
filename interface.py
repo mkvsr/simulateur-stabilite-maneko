@@ -168,7 +168,7 @@ st.markdown("""
 h1 {
     font-family: var(--font-title) !important;
     font-weight: 520 !important;
-    font-size: 42px !important;
+    font-size: 42px ;
     letter-spacing: -0.03em !important;
     color: #1D1D1F !important;
     margin-top: -100px !important;
@@ -1158,6 +1158,7 @@ if run:
 
     with st.expander("Stabilité statique (mode work)"):
         st.json(result["static"]["work"])
+
 
 
 
