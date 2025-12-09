@@ -309,76 +309,60 @@ st.markdown(f"""
 st.markdown("""
 <style>
 
-    /* ----- Style de base de la selectbox ----- */
+    /* --- Forcer le fond clair du conteneur principal SELECT --- */
     div[data-baseweb="select"] > div {
-        background-color: #FFFFFF !important;   /* Fond */
-        min-height: 83px !important;      /* Hauteur totale */
-        min-width: 100% !important;      /* largeur totale */
-        padding: 0px 10px !important;
+        background-color: #FFFFFF !important;
         color: #1D1D1F !important;
-        font-weight: 600 !important;
-        font-size: 17px !important;
-        letter-spacing: -0.03em !important;
-        border-radius: 15px !important;
-        border: 0.5px solid #A3A3AB !important; 
-        display: flex;
-        align-items: center;
-        
+        border-radius: 12px !important;
+        border: 1px solid #A3A3AB !important;
     }
 
-
+    /* --- Nettoyage du label interne --- */
     div[data-baseweb="select"] span {
-    font-size: 50px !important;      /* Taille personnalisée */
-    font-weight: 700 !important;     /* Gras */
-    font-family: 'SF Pro Display', sans-serif !important;
-    letter-spacing: -0.02em !important;
-    background-color: #D32F2F !important;
+        color: #1D1D1F !important;
     }
 
-    /* ----- Texte sélectionné ----- */
-    div[data-baseweb="select"] span {
-        color: #1D1D1F !important;      /* Texte sombre */
-        font-weight: 600 !important;
+    /* --- Popover (menu déroulant) : FOND BLANC --- */
+    div[data-baseweb="popover"] {
+        background-color: #FFFFFF !important;
+        border-radius: 12px !important;
+        border: 1px solid #A3A3AB !important;
     }
 
-    /* ----- Fond du menu déroulant (options listées) ----- */
+    /* Contenu interne du popover */
+    div[data-baseweb="popover"] * {
+        background-color: #FFFFFF !important;
+        color: #1D1D1F !important;
+    }
+
+    /* --- Liste UL des options --- */
     ul[role="listbox"] {
-        background-color: #FDFFFF !important;
-        border: 2px solid #FCA309 !important;
-        border-radius: 6px !important;
+        background-color: #FFFFFF !important;
+        border-radius: 12px !important;
+        padding: 4px !important;
+        border: 1px solid #0071E3 !important;
     }
 
-    /* ----- Options individuellement ----- */
+    /* --- Option individuelle --- */
     li[role="option"] {
+        background-color: #FFFFFF !important;
         color: #1D1D1F !important;
-        font-weight: 500 !important;
-        padding: 8px 10px important;
+        padding: 8px 12px !important;
+        font-size: 16px !important;
     }
 
-    /* ----- Option survolée ----- */
+    /* Option hover */
     li[role="option"]:hover {
-        background-color: #0071e3 !important;   /* Orange Maneko */
+        background-color: #0071E3 !important;
         color: #FFFFFF !important;
         cursor: pointer !important;
     }
 
-    /* ----- Option sélectionnée ----- */
+    /* Option sélectionnée */
     li[aria-selected="true"] {
-        background-color: transparent !important;
+        background-color: #E8F0FE !important;
         color: #1D1D1F !important;
-    }
-
-    /* ----- FIX : fond noir du menu déroulant ----- */
-    div[data-baseweb="popover"] {
-        background-color: #FDFFFF  !important;   /* fond blanc */
-        border-radius: 15px !important;
-        border: 2px solid #0071e3 !important;
-        overflow: hidden !important;
-    }
-
-    /* Contenu interne du popover */
-    div[data-baseweb="popover"] > div {
-        background-color: #FFFFFF !important;
+        font-weight: 600 !important;
     }
 
 </style>
@@ -1072,6 +1056,7 @@ if run:
 
     with st.expander("Stabilité statique (mode work)"):
         st.json(result["static"]["work"])
+
 
 
 
