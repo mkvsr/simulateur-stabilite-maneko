@@ -364,7 +364,7 @@ st.markdown("""
 
     /* Option sélectionnée */
     li[aria-selected="true"] {
-        background-color: #E8F0FE !important;
+        background-color: #0071E3 !important;
         color: #FFFFFF !important;
         font-weight: 400 !important;
     }
@@ -1060,6 +1060,7 @@ if run:
 
     with st.expander("Stabilité statique (mode work)"):
         st.json(result["static"]["work"])
+
 
 
 
