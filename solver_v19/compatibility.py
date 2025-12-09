@@ -8,19 +8,19 @@ def classify(value, limit, type="min"):
 
     if type == "min":
         if value < limit:
-            return "⛔ Danger ⛔"
+            return "⛔ Danger"
         elif value < limit * 1.1:
-            return "⚠️ Avertissement ⚠"
+            return "⚠️ Avertissement"
         else:
-            return "✅ OK ✅"
+            return "✅ OK"
 
     if type == "max":
         if value > limit:
-            return "⛔ Danger ⛔"
+            return "⛔ Danger"
         elif value > limit * 0.90:
-            return "⚠ Avertissement ⚠"
+            return "⚠️ Avertissement"
         else:
-            return "✅ OK ✅"
+            return "✅ OK"
 
 
 def check_compatibility(data):
@@ -175,3 +175,4 @@ def check_compatibility(data):
     })
 
     return results
+
