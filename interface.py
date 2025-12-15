@@ -17,8 +17,7 @@ if not st.session_state.auth:
     if pwd == PASSWORD:
         st.session_state.auth = True
         st.rerun()  # Recharger l’interface après connexion
-
-   st.stop()
+    st.stop()
 
 if "options" not in st.session_state:
     st.session_state["options"] = {}
@@ -1158,6 +1157,7 @@ if run:
 
     with st.expander("Stabilité statique (mode work)"):
         st.json(result["static"]["work"])
+
 
 
 
