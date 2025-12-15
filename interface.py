@@ -9,7 +9,7 @@ PASSWORD = "podEhifgzDkx5yrEK!QM"
 if "auth" not in st.session_state:
     st.session_state.auth = False
 
- Affichage du champ mot de passe uniquement si pas authentifié
+# Affichage du champ mot de passe uniquement si pas authentifié
 if not st.session_state.auth:
     st.markdown("<h3>🔒 Accès sécurisé</h3>", unsafe_allow_html=True)
     pwd = st.text_input("Entrez le mot de passe :", type="password")
@@ -1158,6 +1158,7 @@ if run:
 
     with st.expander("Stabilité statique (mode work)"):
         st.json(result["static"]["work"])
+
 
 
 
