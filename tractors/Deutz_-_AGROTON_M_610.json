@@ -3,6 +3,7 @@
     "brand": "Deutz",
     "model": "AGROTOM M 610",
     "mass": 5460.0,
+    "ptac": 8500.0,
     "mass_front_pct": 50.0,
     "mass_rear_pct": 50.0,
     "tire_defaults": {
