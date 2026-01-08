@@ -1,0 +1,22 @@
+{
+    "name": "Deutz AGROTOM M 610",
+    "brand": "Deutz",
+    "model": "AGROTOM M 610",
+    "mass": 5460.0,
+    "mass_front_pct": 50.0,
+    "mass_rear_pct": 50.0,
+    "tire_defaults": {
+        "front": "480/70R28",
+        "rear": "520/70R38"
+    },
+    "geometry": {
+        "wheelbase": 2.77,
+        "track_front": 2.3,
+        "track_rear": 2.3
+    },
+    "dynamics": {
+        "max_speed_kmh": 50.0,
+        "max_braking_accel": 5.358367626886146,
+        "max_turn_radius": 4.95
+    }
+}
