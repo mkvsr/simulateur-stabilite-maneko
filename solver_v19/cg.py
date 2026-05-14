@@ -49,37 +49,42 @@ def accumulate_CG(MT, CG, m, cg):
 # CG du tracteur
 # ---------------------------------------------------------------------------
 
-def tractor_CG(tractor: dict):
+def tractor_CG(tractor: dict, tires: dict = None, options: dict = None):
     """
     Calcule le CG "nu" du tracteur (sans chargeur).
 
-    Le tracteur est défini par :
-        mass
-        mass_front_pct
-        mass_rear_pct
-
-    Hypothèse :
-    - CG longitudinal = position moyenne = wheelbase * (pct_front)
-    - CG vertical = hauteur nominale (cg_height_nominal)
+    Corrections :
+    - X : formule correcte issue de l'equilibre des moments
+        X = L/2 - pct_front * L
+    - Z : dynamique base sur le rayon du pneu arriere
+        Z = R_AR * 1.30
     """
 
     import numpy as np
 
     m = float(tractor["mass"])
-
     pct_front = tractor.get("mass_front_pct", 50) / 100.0
     wheelbase = tractor["geometry"]["wheelbase"]
 
+    # X : formule correcte issue de l'equilibre des moments
+    # d_AR = pct_front * L  (distance CG -> essieu arriere)
+    # X = d_AR - L/2  (dans repere centre, negatif si masse arriere > 50%)
+    X = (pct_front * wheelbase) - (wheelbase / 2.0)
 
-    # Position en X : plus la masse avant est importante, plus le CG avance
-    X = (2 * pct_front - 1) * (wheelbase / 2)
-    
-
-    # Position en Y : peau de chagrin (axe longitudinal du tracteur)
+    # Y : tracteur symetrique
     Y = 0.0
 
-    # Position en Z : hauteur nominale
-    Z = tractor.get("cg_height_nominal", 1.0)
+    # Z : dynamique selon pneu AR
+    Z = 1.0
+    if tires is not None and options is not None:
+        rear_tire_name = options.get("rear_tire")
+        if rear_tire_name and rear_tire_name in tires:
+            diam_mm = tires[rear_tire_name].get("diameter_mm", 0)
+            if diam_mm > 0:
+                R_AR = diam_mm / 2000.0
+                Z = R_AR * 1.30
+    if Z == 1.0 and "cg_height_nominal" in tractor:
+        Z = float(tractor["cg_height_nominal"])
 
     return m, np.array([X, Y, Z], dtype=float)
 
@@ -289,7 +294,7 @@ def compute_global_CG(tractor, machine, loader, tires, options,
         # ----------------------------------------------------------
         # 1) Tracteur
         # ----------------------------------------------------------
-        m, cg = tractor_CG(tractor)
+        m, cg = tractor_CG(tractor, tires=tires, options=options)
         MT, CG = accumulate_CG(MT, CG, m, cg)
 
         # ----------------------------------------------------------

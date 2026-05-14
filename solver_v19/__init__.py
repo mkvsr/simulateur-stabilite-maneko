@@ -1,5 +1,5 @@
 """
-solver_v12 package
+solver_v19 package
 ------------------
 
 Ce package regroupe tous les modules du solver :

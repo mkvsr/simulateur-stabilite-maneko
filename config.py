@@ -6,4 +6,4 @@ WARNING = "#F9A825"
 OK = "#388E3C"
 
 # Chemins
-SIMULATOR_PATH = "../simulateur_minimal19"
+SIMULATOR_PATH = "."
