@@ -101,10 +101,13 @@ def get_tractors():
             "model":          t.get("model"),
             "mass":           t.get("mass"),
             "mass_front_pct": t.get("mass_front_pct"),
+            "mass_rear_pct":  t.get("mass_rear_pct"),
+            "ptac":           t.get("ptac"),
             "wheelbase":      t.get("geometry", {}).get("wheelbase"),
             "track_front":    t.get("geometry", {}).get("track_front"),
             "track_rear":     t.get("geometry", {}).get("track_rear"),
             "tire_defaults":  t.get("tire_defaults"),
+            "dynamics":       t.get("dynamics"),
         })
     return result
 
