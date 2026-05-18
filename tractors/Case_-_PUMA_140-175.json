@@ -1,0 +1,23 @@
+{
+  "name": "Case - PUMA 140-175",
+  "brand": "Case",
+  "model": "PUMA 140-175",
+  "mass": 7256.0,
+  "mass_front_pct": 45.0,
+  "mass_rear_pct": 55.0,
+  "ptac": 10500.0,
+  "geometry": {
+    "wheelbase": 2.734,
+    "track_front": 1.8,
+    "track_rear": 1.83
+  },
+  "dynamics": {
+    "max_speed_kmh": 40.0,
+    "max_braking_accel": 5.144032921810699,
+    "max_turn_radius": 5.45
+  },
+  "tire_defaults": {
+    "front": "540/65R28",
+    "rear": "650/65R38"
+  }
+}

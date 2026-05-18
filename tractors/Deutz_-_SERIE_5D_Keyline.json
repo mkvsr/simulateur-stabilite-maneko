@@ -1,0 +1,23 @@
+{
+  "name": "Deutz - SERIE 5D Keyline",
+  "brand": "Deutz",
+  "model": "SERIE 5D Keyline",
+  "mass": 3250.0,
+  "mass_front_pct": 40.0,
+  "mass_rear_pct": 60.0,
+  "ptac": 5200.0,
+  "geometry": {
+    "wheelbase": 2.1,
+    "track_front": 1.882,
+    "track_rear": 1.882
+  },
+  "dynamics": {
+    "max_speed_kmh": 40.0,
+    "max_braking_accel": 5.144032921810699,
+    "max_turn_radius": 3.5
+  },
+  "tire_defaults": {
+    "front": "320/85R24",
+    "rear": "420/70R30"
+  }
+}

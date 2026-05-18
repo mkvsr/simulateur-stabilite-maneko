@@ -1,15 +1,15 @@
 {
-  "name": "Claas - ARION 500",
-  "brand": "Claas",
-  "model": "ARION 500",
+  "name": "New Holland - T7 SWB",
+  "brand": "New Holland",
+  "model": "T7 SWB",
   "mass": 6950.0,
   "mass_front_pct": 50.0,
   "mass_rear_pct": 50.0,
-  "ptac": 10250.0,
+  "ptac": 11500.0,
   "geometry": {
-    "wheelbase": 2.564,
-    "track_front": 2.55,
-    "track_rear": 2.55
+    "wheelbase": 2.734,
+    "track_front": 2.446,
+    "track_rear": 2.446
   },
   "dynamics": {
     "max_speed_kmh": 40.0,
@@ -17,7 +17,7 @@
     "max_turn_radius": 4.95
   },
   "tire_defaults": {
-    "front": "540/65R28",
+    "front": "540/65R30",
     "rear": "650/65R38"
   }
 }

@@ -1,0 +1,23 @@
+{
+  "name": "Deutz - SERIE 7",
+  "brand": "Deutz",
+  "model": "SERIE 7",
+  "mass": 9030.0,
+  "mass_front_pct": 40.3,
+  "mass_rear_pct": 59.7,
+  "ptac": 15500.0,
+  "geometry": {
+    "wheelbase": 2.918,
+    "track_front": 1.94,
+    "track_rear": 1.94
+  },
+  "dynamics": {
+    "max_speed_kmh": 60.0,
+    "max_braking_accel": 5.358367626886146,
+    "max_turn_radius": 5.6
+  },
+  "tire_defaults": {
+    "front": "420/85R30",
+    "rear": "480/80R46"
+  }
+}

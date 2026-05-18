@@ -1,0 +1,23 @@
+{
+  "name": "Kubota - M4003",
+  "brand": "Kubota",
+  "model": "M4003",
+  "mass": 2955.0,
+  "mass_front_pct": 45.0,
+  "mass_rear_pct": 55.0,
+  "ptac": 5500.0,
+  "geometry": {
+    "wheelbase": 2.13,
+    "track_front": 1.49,
+    "track_rear": 1.615
+  },
+  "dynamics": {
+    "max_speed_kmh": 40.0,
+    "max_braking_accel": 5.144032921810699,
+    "max_turn_radius": 3.5
+  },
+  "tire_defaults": {
+    "front": "375/70R20",
+    "rear": "420/85R30"
+  }
+}

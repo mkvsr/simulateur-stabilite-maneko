@@ -1,0 +1,23 @@
+{
+  "name": "Deutz - SERIE 6.4",
+  "brand": "Deutz",
+  "model": "SERIE 6.4",
+  "mass": 6500.0,
+  "mass_front_pct": 39.0,
+  "mass_rear_pct": 61.0,
+  "ptac": 10500.0,
+  "geometry": {
+    "wheelbase": 2.562,
+    "track_front": 1.89,
+    "track_rear": 1.9
+  },
+  "dynamics": {
+    "max_speed_kmh": 50.0,
+    "max_braking_accel": 5.358367626886146,
+    "max_turn_radius": 4.9
+  },
+  "tire_defaults": {
+    "front": "420/85R24",
+    "rear": "460/85R38"
+  }
+}

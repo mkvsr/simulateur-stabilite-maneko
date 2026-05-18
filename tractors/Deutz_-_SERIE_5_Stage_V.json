@@ -1,0 +1,23 @@
+{
+  "name": "Deutz - SERIE 5 Stage V",
+  "brand": "Deutz",
+  "model": "SERIE 5 Stage V",
+  "mass": 3950.0,
+  "mass_front_pct": 40.0,
+  "mass_rear_pct": 60.0,
+  "ptac": 6500.0,
+  "geometry": {
+    "wheelbase": 2.4,
+    "track_front": 1.5,
+    "track_rear": 1.54
+  },
+  "dynamics": {
+    "max_speed_kmh": 40.0,
+    "max_braking_accel": 5.144032921810699,
+    "max_turn_radius": 3.97
+  },
+  "tire_defaults": {
+    "front": "380/85R24",
+    "rear": "420/85R34"
+  }
+}

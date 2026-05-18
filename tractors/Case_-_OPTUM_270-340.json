@@ -1,0 +1,23 @@
+{
+  "name": "Case - OPTUM 270-340",
+  "brand": "Case",
+  "model": "OPTUM 270-340",
+  "mass": 11530.0,
+  "mass_front_pct": 45.0,
+  "mass_rear_pct": 55.0,
+  "ptac": 17200.0,
+  "geometry": {
+    "wheelbase": 2.995,
+    "track_front": 2.05,
+    "track_rear": 2.1
+  },
+  "dynamics": {
+    "max_speed_kmh": 50.0,
+    "max_braking_accel": 5.358367626886146,
+    "max_turn_radius": 7.7
+  },
+  "tire_defaults": {
+    "front": "540/65R28",
+    "rear": "650/85R38"
+  }
+}

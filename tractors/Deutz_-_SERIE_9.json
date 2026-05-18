@@ -1,0 +1,23 @@
+{
+  "name": "Deutz - SERIE 9",
+  "brand": "Deutz",
+  "model": "SERIE 9",
+  "mass": 12000.0,
+  "mass_front_pct": 40.4,
+  "mass_rear_pct": 59.6,
+  "ptac": 18000.0,
+  "geometry": {
+    "wheelbase": 3.135,
+    "track_front": 2.5,
+    "track_rear": 2.5
+  },
+  "dynamics": {
+    "max_speed_kmh": 60.0,
+    "max_braking_accel": 5.358367626886146,
+    "max_turn_radius": 7.0
+  },
+  "tire_defaults": {
+    "front": "650/65R34",
+    "rear": "710/75R42"
+  }
+}

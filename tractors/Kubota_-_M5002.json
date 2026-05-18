@@ -1,0 +1,23 @@
+{
+  "name": "Kubota - M5002",
+  "brand": "Kubota",
+  "model": "M5002",
+  "mass": 3500.0,
+  "mass_front_pct": 45.0,
+  "mass_rear_pct": 55.0,
+  "ptac": 5500.0,
+  "geometry": {
+    "wheelbase": 2.25,
+    "track_front": 1.61,
+    "track_rear": 1.615
+  },
+  "dynamics": {
+    "max_speed_kmh": 40.0,
+    "max_braking_accel": 5.144032921810699,
+    "max_turn_radius": 4.2
+  },
+  "tire_defaults": {
+    "front": "360/70R24",
+    "rear": "480/70R34"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Deutz - SERIE 5D TTV",
+  "brand": "Deutz",
+  "model": "SERIE 5D TTV",
+  "mass": 4210.0,
+  "mass_front_pct": 40.4,
+  "mass_rear_pct": 59.6,
+  "ptac": 5800.0,
+  "geometry": {
+    "wheelbase": 2.271,
+    "track_front": 1.5,
+    "track_rear": 1.54
+  },
+  "dynamics": {
+    "max_speed_kmh": 40.0,
+    "max_braking_accel": 5.144032921810699,
+    "max_turn_radius": 3.5
+  },
+  "tire_defaults": {
+    "front": "280/85R24",
+    "rear": "320/85R36"
+  }
+}

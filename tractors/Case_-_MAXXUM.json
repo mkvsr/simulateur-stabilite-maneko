@@ -1,0 +1,23 @@
+{
+  "name": "Case - MAXXUM",
+  "brand": "Case",
+  "model": "MAXXUM",
+  "mass": 5020.0,
+  "mass_front_pct": 45.0,
+  "mass_rear_pct": 55.0,
+  "ptac": 9500.0,
+  "geometry": {
+    "wheelbase": 2.654,
+    "track_front": 1.58,
+    "track_rear": 1.43
+  },
+  "dynamics": {
+    "max_speed_kmh": 50.0,
+    "max_braking_accel": 5.358367626886146,
+    "max_turn_radius": 4.6
+  },
+  "tire_defaults": {
+    "front": "480/65R28",
+    "rear": "600/65R38"
+  }
+}

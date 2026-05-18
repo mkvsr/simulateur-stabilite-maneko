@@ -1,0 +1,23 @@
+{
+  "name": "Case - FARMALL M",
+  "brand": "Case",
+  "model": "FARMALL M",
+  "mass": 4500.0,
+  "mass_front_pct": 45.0,
+  "mass_rear_pct": 55.0,
+  "ptac": 8000.0,
+  "geometry": {
+    "wheelbase": 2.38,
+    "track_front": 1.8,
+    "track_rear": 1.8
+  },
+  "dynamics": {
+    "max_speed_kmh": 40.0,
+    "max_braking_accel": 5.144032921810699,
+    "max_turn_radius": 4.36
+  },
+  "tire_defaults": {
+    "front": "440/65R28",
+    "rear": "540/65R38"
+  }
+}
