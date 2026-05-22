@@ -247,3 +247,6 @@ def simulate(request: SimulationRequest):
         dynamic_work=fmt_dynamic("work"),
         compatibility=compatibility,
     )
+@app.get("/health")
+def health():
+    return {"status": "ok"}
