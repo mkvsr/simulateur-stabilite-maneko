@@ -103,3 +103,5 @@ class SimulationResponse(BaseModel):
 
     # Critères de sécurité
     compatibility: list[CriterionResult]
+    compatibility_transport: list[CriterionResult]
+    compatibility_work: list[CriterionResult]

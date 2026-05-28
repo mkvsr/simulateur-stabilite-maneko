@@ -160,20 +160,36 @@ def solve(tractor, machine, loader, tires, options, env):
     try:
         from solver_v19.compatibility import check_compatibility
 
-        compat = check_compatibility({
+        common = {
+            "machine_mass": machine.get("mass", 0),
+            "tractor_mass": tractor.get("mass", 0),
+            "ptac": tractor.get("ptac", None)
+        }
+
+        compat_work = check_compatibility({
+            **common,
             "wheels": wheels["work"],
             "I_lat": static["work"]["I_lat"],
             "I_long": static["work"]["I_long"],
             "total_mass": CG_data["work"]["mass_total"],
-            "machine_mass": machine.get("mass", 0),
-            "tractor_mass": tractor.get("mass", 0),
-            "ptac": tractor.get("ptac", None)
         })
 
-        result["compatibility"] = compat
+        compat_transport = check_compatibility({
+            **common,
+            "wheels": wheels["transport"],
+            "I_lat": static["transport"]["I_lat"],
+            "I_long": static["transport"]["I_long"],
+            "total_mass": CG_data["transport"]["mass_total"],
+        })
+
+        result["compatibility_work"] = compat_work
+        result["compatibility_transport"] = compat_transport
+        result["compatibility"] = compat_work  # rétrocompatibilité
 
     except Exception as e:
         print("\n[ERREUR COMPATIBILITE] :", e)
+        result["compatibility_work"] = []
+        result["compatibility_transport"] = []
         result["compatibility"] = []
 
     return result

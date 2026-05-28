@@ -227,14 +227,11 @@ def simulate(request: SimulationRequest):
             I_dynamic=round(d["I_dynamic"], 4),
         )
 
-    compatibility = [
-        CriterionResult(
-            name=c["name"],
-            status=c["status"],
-            value=round(c["value"], 4)
-        )
-        for c in result["compatibility"]
-    ]
+    def fmt_compat(key: str):
+        return [
+            CriterionResult(name=c["name"], status=c["status"], value=round(c["value"], 4))
+            for c in result[key]
+        ]
 
     return SimulationResponse(
         transport=fmt_cg("transport"),
@@ -245,7 +242,9 @@ def simulate(request: SimulationRequest):
         static_work=fmt_static("work"),
         dynamic_transport=fmt_dynamic("transport"),
         dynamic_work=fmt_dynamic("work"),
-        compatibility=compatibility,
+        compatibility=fmt_compat("compatibility"),
+        compatibility_transport=fmt_compat("compatibility_transport"),
+        compatibility_work=fmt_compat("compatibility_work"),
     )
 @app.get("/health")
 def health():
