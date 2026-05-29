@@ -1,5 +1,7 @@
 {
     "model": "DEXTRA M54",
+    "brand": "NOREMAT",
+    "gamme": "Pro",
     "mass": 1480,
     "transport": {
         "x_rel": -0.46,

@@ -1,5 +1,7 @@
 {
     "model": "OPTIMA M56",
+    "brand": "NOREMAT",
+    "gamme": "Pro-TP",
     "mass": 1680,
     "transport": {
         "x_rel": -0.66,

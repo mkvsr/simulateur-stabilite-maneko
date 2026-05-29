@@ -1,5 +1,7 @@
 {
     "model": "PRODIGIA 45",
+    "brand": "NOREMAT",
+    "gamme": "Agri",
     "mass": 1225,
     "transport": {
         "x_rel": -0.62,

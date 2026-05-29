@@ -1,5 +1,7 @@
 {
     "model": "MAGISTRA M61T",
+    "brand": "NOREMAT",
+    "gamme": "TP",
     "mass": 2255,
     "transport": {
         "x_rel": -0.635,

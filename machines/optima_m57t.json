@@ -1,5 +1,7 @@
 {
     "model": "OPTIMA M57T",
+    "brand": "NOREMAT",
+    "gamme": "Pro-TP",
     "mass": 1780,
     "transport": {
         "x_rel": -0.75,

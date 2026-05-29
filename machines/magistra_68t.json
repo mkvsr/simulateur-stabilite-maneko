@@ -1,5 +1,7 @@
 {
     "model": "MAGISTRA 68T",
+    "brand": "NOREMAT",
+    "gamme": "TP",
     "mass": 2175,
     "transport": {
         "x_rel": -0.67,

@@ -1,5 +1,7 @@
 {
     "model": "DO NOT USE",
+    "brand": "NOREMAT",
+    "gamme": "TP",
     "mass": 0,
     "transport": {
         "x_rel": 0,

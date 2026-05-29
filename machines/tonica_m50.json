@@ -1,5 +1,7 @@
 {
     "model": "TONICA M50",
+    "brand": "NOREMAT",
+    "gamme": "Pro-TP",
     "mass": 1375,
     "transport": {
         "x_rel": -0.6,

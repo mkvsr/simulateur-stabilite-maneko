@@ -1,5 +1,7 @@
 {
     "model": "DEXTRA M49",
+    "brand": "NOREMAT",
+    "gamme": "Pro",
     "mass": 1450,
     "transport": {
         "x_rel": -0.4,

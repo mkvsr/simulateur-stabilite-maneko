@@ -1,5 +1,7 @@
 {
     "model": "OPTIMA 60T",
+    "brand": "NOREMAT",
+    "gamme": "Pro-TP",
     "mass": 1750,
     "transport": {
         "x_rel": -0.7,

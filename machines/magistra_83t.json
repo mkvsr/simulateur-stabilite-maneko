@@ -1,5 +1,7 @@
 {
     "model": "MAGISTRA 83T",
+    "brand": "NOREMAT",
+    "gamme": "TP",
     "mass": 2450,
     "transport": {
         "x_rel": -0.72,

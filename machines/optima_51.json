@@ -1,5 +1,7 @@
 {
     "model": "OPTIMA 51",
+    "brand": "NOREMAT",
+    "gamme": "Pro-TP",
     "mass": 1640,
     "transport": {
         "x_rel": -0.66,

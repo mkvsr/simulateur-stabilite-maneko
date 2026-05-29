@@ -1,5 +1,7 @@
 {
     "model": "MAGISTRA M55",
+    "brand": "NOREMAT",
+    "gamme": "TP",
     "mass": 1975,
     "transport": {
         "x_rel": -0.6,
