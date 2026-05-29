@@ -4,6 +4,10 @@
     "gamme": "Agri",
     "calcul_stab_ref": "PRODIGIA 50",
     "mass": 1300,
+    "portee_horizontale": 4.9,
+    "portee_verticale": 6.05,
+    "puissance_tracteur_mini": "70 CV",
+    "puissance_rotor": "45 CV",
     "transport": {
         "x_rel": -0.62,
         "y_rel": 0.155,

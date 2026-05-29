@@ -4,6 +4,10 @@
     "gamme": "TP",
     "calcul_stab_ref": "MAGISTRA 73T",
     "mass": 2190,
+    "portee_horizontale": 7.3,
+    "portee_verticale": 8.8,
+    "puissance_tracteur_mini": "90 CV",
+    "puissance_rotor": "82 CV",
     "transport": {
         "x_rel": -0.67,
         "y_rel": 0.155,

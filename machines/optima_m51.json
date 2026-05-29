@@ -2,7 +2,11 @@
     "model": "OPTIMA M51",
     "brand": "NOREMAT",
     "gamme": "Pro-TP",
-    "mass": 1640,
+    "mass": 1595,
+    "portee_horizontale": 5.14,
+    "portee_verticale": 6.57,
+    "puissance_tracteur_mini": "85 CV",
+    "puissance_rotor": "68 ou 78 CV",
     "transport": {
         "x_rel": -0.65,
         "y_rel": 0.155,

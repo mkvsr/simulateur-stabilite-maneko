@@ -2,7 +2,11 @@
     "model": "OPTIMA 60T",
     "brand": "NOREMAT",
     "gamme": "Pro-TP",
-    "mass": 1750,
+    "mass": 1600,
+    "portee_horizontale": 6.05,
+    "portee_verticale": 7.36,
+    "puissance_tracteur_mini": "90 CV",
+    "puissance_rotor": "68 ou 78 CV",
     "transport": {
         "x_rel": -0.7,
         "y_rel": 0.155,

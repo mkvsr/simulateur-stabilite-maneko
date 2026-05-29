@@ -1,0 +1,21 @@
+{
+    "model": "PUMA 2450 S",
+    "brand": "SMA",
+    "gamme": "Pro-TP",
+    "calcul_stab_ref": "TONICA M50",
+    "mass": 1560,
+    "portee_horizontale": 5.0,
+    "portee_verticale": 6.3,
+    "puissance_tracteur_mini": "75 CV",
+    "puissance_rotor": "82 CV",
+    "transport": {
+        "x_rel": -0.6,
+        "y_rel": 0.155,
+        "z_rel": 1.36
+    },
+    "work": {
+        "x_rel": -0.1,
+        "y_rel": -1.39,
+        "z_rel": 1.09
+    }
+}

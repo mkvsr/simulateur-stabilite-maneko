@@ -1,0 +1,21 @@
+{
+    "model": "KASTOR 500 PA",
+    "brand": "ROUSSEAU",
+    "gamme": "Pro-TP",
+    "calcul_stab_ref": "TONICA M50",
+    "mass": 1500,
+    "portee_horizontale": 5.02,
+    "portee_verticale": 6.6,
+    "puissance_tracteur_mini": "85 CV",
+    "puissance_rotor": "82 CV",
+    "transport": {
+        "x_rel": -0.6,
+        "y_rel": 0.155,
+        "z_rel": 1.36
+    },
+    "work": {
+        "x_rel": -0.1,
+        "y_rel": -1.39,
+        "z_rel": 1.09
+    }
+}

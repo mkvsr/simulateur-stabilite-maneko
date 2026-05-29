@@ -1,0 +1,21 @@
+{
+    "model": "PRO LONGER GII 7483 TP",
+    "brand": "KUHN",
+    "gamme": "TP",
+    "calcul_stab_ref": "MAGISTRA 73T",
+    "mass": 2130,
+    "portee_horizontale": 7.4,
+    "portee_verticale": 8.4,
+    "puissance_tracteur_mini": "100 CV",
+    "puissance_rotor": "80 CV",
+    "transport": {
+        "x_rel": -0.67,
+        "y_rel": 0.155,
+        "z_rel": 1.44
+    },
+    "work": {
+        "x_rel": -0.25,
+        "y_rel": -1.83,
+        "z_rel": 1.17
+    }
+}

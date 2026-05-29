@@ -1,0 +1,21 @@
+{
+    "model": "THEA 450 PA",
+    "brand": "ROUSSEAU",
+    "gamme": "Pro",
+    "calcul_stab_ref": "PRODIGIA 45",
+    "mass": 1050,
+    "portee_horizontale": 4.5,
+    "portee_verticale": 4.65,
+    "puissance_tracteur_mini": "70 CV",
+    "puissance_rotor": "42 CV",
+    "transport": {
+        "x_rel": -0.62,
+        "y_rel": 0.155,
+        "z_rel": 1.25
+    },
+    "work": {
+        "x_rel": -0.16,
+        "y_rel": -1.22,
+        "z_rel": 0.98
+    }
+}

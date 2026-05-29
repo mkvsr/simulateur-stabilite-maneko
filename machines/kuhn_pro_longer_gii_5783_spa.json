@@ -4,6 +4,10 @@
     "gamme": "TP",
     "calcul_stab_ref": "MAGISTRA M61T",
     "mass": 1960,
+    "portee_horizontale": 5.7,
+    "portee_verticale": 6.74,
+    "puissance_tracteur_mini": "100 CV",
+    "puissance_rotor": "80 CV",
     "transport": {
         "x_rel": -0.635,
         "y_rel": 0.155,

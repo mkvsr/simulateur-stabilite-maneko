@@ -4,6 +4,10 @@
     "gamme": "TP",
     "calcul_stab_ref": "MAGISTRA M55",
     "mass": 1865,
+    "portee_horizontale": 5.6,
+    "portee_verticale": 6.82,
+    "puissance_tracteur_mini": "100 CV",
+    "puissance_rotor": "80 CV",
     "transport": {
         "x_rel": -0.6,
         "y_rel": 0.155,

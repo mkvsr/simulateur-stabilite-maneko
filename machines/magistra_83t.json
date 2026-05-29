@@ -3,6 +3,10 @@
     "brand": "NOREMAT",
     "gamme": "TP",
     "mass": 2450,
+    "portee_horizontale": 8.3,
+    "portee_verticale": 9.09,
+    "puissance_tracteur_mini": "110 CV",
+    "puissance_rotor": "73 ou 84 CV",
     "transport": {
         "x_rel": -0.72,
         "y_rel": 0.155,

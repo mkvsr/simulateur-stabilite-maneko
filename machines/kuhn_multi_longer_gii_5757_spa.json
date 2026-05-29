@@ -1,0 +1,21 @@
+{
+    "model": "MULTI LONGER GII 5757 SPA",
+    "brand": "KUHN",
+    "gamme": "Pro-TP",
+    "calcul_stab_ref": "OPTIMA M57T",
+    "mass": 1810,
+    "portee_horizontale": 5.7,
+    "portee_verticale": 6.74,
+    "puissance_tracteur_mini": "80 CV",
+    "puissance_rotor": "57 CV",
+    "transport": {
+        "x_rel": -0.75,
+        "y_rel": 0.155,
+        "z_rel": 1.38
+    },
+    "work": {
+        "x_rel": 0.18,
+        "y_rel": -1.625,
+        "z_rel": 1.11
+    }
+}

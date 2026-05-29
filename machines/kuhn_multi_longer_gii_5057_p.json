@@ -1,0 +1,21 @@
+{
+    "model": "MULTI LONGER GII 5057 P",
+    "brand": "KUHN",
+    "gamme": "Pro-TP",
+    "calcul_stab_ref": "TONICA 50",
+    "mass": 1600,
+    "portee_horizontale": 5.0,
+    "portee_verticale": 6.34,
+    "puissance_tracteur_mini": "80 CV",
+    "puissance_rotor": "57 CV",
+    "transport": {
+        "x_rel": -0.62,
+        "y_rel": 0.155,
+        "z_rel": 1.36
+    },
+    "work": {
+        "x_rel": -0.11,
+        "y_rel": -1.5,
+        "z_rel": 1.08
+    }
+}

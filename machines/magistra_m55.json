@@ -2,7 +2,11 @@
     "model": "MAGISTRA M55",
     "brand": "NOREMAT",
     "gamme": "TP",
-    "mass": 1975,
+    "mass": 1965,
+    "portee_horizontale": 5.5,
+    "portee_verticale": 6.27,
+    "puissance_tracteur_mini": "90 CV",
+    "puissance_rotor": "73 ou 84 CV",
     "transport": {
         "x_rel": -0.6,
         "y_rel": 0.155,

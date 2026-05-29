@@ -1,0 +1,21 @@
+{
+    "model": "FULGOR 876",
+    "brand": "ROUSSEAU",
+    "gamme": "TP",
+    "calcul_stab_ref": "MAGISTRA 83T",
+    "mass": 2650,
+    "portee_horizontale": 8.52,
+    "portee_verticale": 8.95,
+    "puissance_tracteur_mini": "95 CV",
+    "puissance_rotor": "82 CV",
+    "transport": {
+        "x_rel": -0.72,
+        "y_rel": 0.155,
+        "z_rel": 1.44
+    },
+    "work": {
+        "x_rel": -0.2,
+        "y_rel": -2.3,
+        "z_rel": 1.17
+    }
+}

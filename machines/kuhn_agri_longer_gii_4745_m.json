@@ -1,0 +1,21 @@
+{
+    "model": "AGRI LONGER GII 4745 M",
+    "brand": "KUHN",
+    "gamme": "Agri",
+    "calcul_stab_ref": "PRODIGIA 45",
+    "mass": 915,
+    "portee_horizontale": 4.7,
+    "portee_verticale": 5.65,
+    "puissance_tracteur_mini": "70 CV",
+    "puissance_rotor": "45 CV",
+    "transport": {
+        "x_rel": -0.62,
+        "y_rel": 0.155,
+        "z_rel": 1.25
+    },
+    "work": {
+        "x_rel": -0.16,
+        "y_rel": -1.22,
+        "z_rel": 0.98
+    }
+}

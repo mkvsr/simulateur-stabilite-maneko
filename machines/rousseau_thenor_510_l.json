@@ -4,6 +4,10 @@
     "gamme": "TP",
     "calcul_stab_ref": "OPTIMA M57T",
     "mass": 1800,
+    "portee_horizontale": 5.22,
+    "portee_verticale": 6.12,
+    "puissance_tracteur_mini": "90 CV",
+    "puissance_rotor": "82 CV",
     "transport": {
         "x_rel": -0.75,
         "y_rel": 0.155,

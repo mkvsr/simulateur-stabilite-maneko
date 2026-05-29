@@ -2,7 +2,11 @@
     "model": "OPTIMA M56",
     "brand": "NOREMAT",
     "gamme": "Pro-TP",
-    "mass": 1680,
+    "mass": 1645,
+    "portee_horizontale": 5.61,
+    "portee_verticale": 7.03,
+    "puissance_tracteur_mini": "85 CV",
+    "puissance_rotor": "68 ou 78 CV",
     "transport": {
         "x_rel": -0.66,
         "y_rel": 0.155,

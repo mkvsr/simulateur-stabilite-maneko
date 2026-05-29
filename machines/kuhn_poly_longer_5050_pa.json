@@ -1,0 +1,21 @@
+{
+    "model": "POLY LONGER 5050 PA",
+    "brand": "KUHN",
+    "gamme": "Pro",
+    "calcul_stab_ref": "DEXTRA M49",
+    "mass": 1645,
+    "portee_horizontale": 5.0,
+    "portee_verticale": 6.36,
+    "puissance_tracteur_mini": "80 CV",
+    "puissance_rotor": "51 CV",
+    "transport": {
+        "x_rel": -0.4,
+        "y_rel": 0.155,
+        "z_rel": 1.3
+    },
+    "work": {
+        "x_rel": -0.09,
+        "y_rel": -1.46,
+        "z_rel": 1.03
+    }
+}

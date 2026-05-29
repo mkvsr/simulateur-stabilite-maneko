@@ -3,6 +3,10 @@
     "brand": "NOREMAT",
     "gamme": "TP",
     "mass": 0,
+    "portee_horizontale": 0,
+    "portee_verticale": 0,
+    "puissance_tracteur_mini": null,
+    "puissance_rotor": null,
     "transport": {
         "x_rel": 0,
         "y_rel": 0,

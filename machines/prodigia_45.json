@@ -2,7 +2,11 @@
     "model": "PRODIGIA 45",
     "brand": "NOREMAT",
     "gamme": "Agri",
-    "mass": 1225,
+    "mass": 1170,
+    "portee_horizontale": 4.5,
+    "portee_verticale": 5.6,
+    "puissance_tracteur_mini": "70 CV",
+    "puissance_rotor": "47 ou 54 CV",
     "transport": {
         "x_rel": -0.62,
         "y_rel": 0.155,

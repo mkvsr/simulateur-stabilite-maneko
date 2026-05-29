@@ -1,0 +1,21 @@
+{
+    "model": "THENOR 610 PA",
+    "brand": "ROUSSEAU",
+    "gamme": "TP",
+    "calcul_stab_ref": "MAGISTRA M60",
+    "mass": 2100,
+    "portee_horizontale": 6.15,
+    "portee_verticale": 6.42,
+    "puissance_tracteur_mini": "90 CV",
+    "puissance_rotor": "82 CV",
+    "transport": {
+        "x_rel": -0.6,
+        "y_rel": 0.155,
+        "z_rel": 1.44
+    },
+    "work": {
+        "x_rel": -0.25,
+        "y_rel": -1.635,
+        "z_rel": 1.17
+    }
+}

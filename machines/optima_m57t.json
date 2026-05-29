@@ -2,7 +2,11 @@
     "model": "OPTIMA M57T",
     "brand": "NOREMAT",
     "gamme": "Pro-TP",
-    "mass": 1780,
+    "mass": 1745,
+    "portee_horizontale": 5.7,
+    "portee_verticale": 7.11,
+    "puissance_tracteur_mini": "90 CV",
+    "puissance_rotor": "68 ou 78 CV",
     "transport": {
         "x_rel": -0.75,
         "y_rel": 0.155,

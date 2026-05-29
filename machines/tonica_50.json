@@ -3,6 +3,10 @@
     "brand": "NOREMAT",
     "gamme": "Pro-TP",
     "mass": 1375,
+    "portee_horizontale": 5.0,
+    "portee_verticale": 6.5,
+    "puissance_tracteur_mini": "80 CV",
+    "puissance_rotor": "68 ou 78 CV",
     "transport": {
         "x_rel": -0.62,
         "y_rel": 0.155,

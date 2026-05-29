@@ -4,6 +4,10 @@
     "gamme": "Pro-TP",
     "calcul_stab_ref": "OPTIMA 60T",
     "mass": 1715,
+    "portee_horizontale": 6.04,
+    "portee_verticale": 7.51,
+    "puissance_tracteur_mini": "85 CV",
+    "puissance_rotor": "82 CV",
     "transport": {
         "x_rel": -0.7,
         "y_rel": 0.155,
