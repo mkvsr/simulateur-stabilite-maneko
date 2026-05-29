@@ -250,6 +250,6 @@ def simulate(request: SimulationRequest):
         compatibility_transport=fmt_compat("compatibility_transport"),
         compatibility_work=fmt_compat("compatibility_work"),
     )
-@app.get("/health")
+@app.api_route("/health", methods=["GET", "HEAD"])
 def health():
     return {"status": "ok"}
