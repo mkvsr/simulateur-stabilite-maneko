@@ -125,11 +125,15 @@ def get_machines():
     """Retourne la liste des machines disponibles."""
     result = []
     for key, m in MACHINES.items():
-        result.append({
+        entry = {
             "key":   key,
             "model": m.get("model"),
             "mass":  m.get("mass"),
-        })
+        }
+        for field in ("brand", "gamme", "portee_horizontale", "portee_verticale", "puissance_tracteur_mini"):
+            if m.get(field) is not None:
+                entry[field] = m[field]
+        result.append(entry)
     return result
 
 
