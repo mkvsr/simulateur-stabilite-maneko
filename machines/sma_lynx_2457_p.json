@@ -1,0 +1,17 @@
+{
+    "model": "LYNX 2457 P",
+    "brand": "SMA",
+    "gamme": "TP",
+    "calcul_stab_ref": "MAGISTRA M60",
+    "mass": 2120,
+    "transport": {
+        "x_rel": -0.6,
+        "y_rel": 0.155,
+        "z_rel": 1.44
+    },
+    "work": {
+        "x_rel": -0.25,
+        "y_rel": -1.635,
+        "z_rel": 1.17
+    }
+}

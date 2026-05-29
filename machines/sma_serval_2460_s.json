@@ -1,0 +1,17 @@
+{
+    "model": "SERVAL 2460 S",
+    "brand": "SMA",
+    "gamme": "Pro-TP",
+    "calcul_stab_ref": "OPTIMA M56",
+    "mass": 1930,
+    "transport": {
+        "x_rel": -0.66,
+        "y_rel": 0.155,
+        "z_rel": 1.38
+    },
+    "work": {
+        "x_rel": 0.05,
+        "y_rel": -1.48,
+        "z_rel": 1.11
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "model": "KASTOR 600 T",
+    "brand": "ROUSSEAU",
+    "gamme": "Pro-TP",
+    "calcul_stab_ref": "OPTIMA 60T",
+    "mass": 1715,
+    "transport": {
+        "x_rel": -0.7,
+        "y_rel": 0.155,
+        "z_rel": 1.38
+    },
+    "work": {
+        "x_rel": -0.05,
+        "y_rel": -1.612,
+        "z_rel": 1.11
+    }
+}

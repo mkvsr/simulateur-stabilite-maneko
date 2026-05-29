@@ -1,0 +1,17 @@
+{
+    "model": "PRO LONGER GII 5683 LP",
+    "brand": "KUHN",
+    "gamme": "TP",
+    "calcul_stab_ref": "M56",
+    "mass": 2000,
+    "transport": {
+        "x_rel": -0.66,
+        "y_rel": 0.155,
+        "z_rel": 1.38
+    },
+    "work": {
+        "x_rel": 0.05,
+        "y_rel": -1.48,
+        "z_rel": 1.11
+    }
+}

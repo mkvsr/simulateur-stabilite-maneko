@@ -1,0 +1,14 @@
+{
+    "model": "MAGISTRA M55",
+    "mass": 1975,
+    "transport": {
+        "x_rel": -0.6,
+        "y_rel": 0.155,
+        "z_rel": 1.38
+    },
+    "work": {
+        "x_rel": -0.25,
+        "y_rel": -1.59,
+        "z_rel": 1.17
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "model": "GUEPARD 2473 T",
+    "brand": "SMA",
+    "gamme": "TP",
+    "calcul_stab_ref": "MAGISTRA 73T",
+    "mass": 2190,
+    "transport": {
+        "x_rel": -0.67,
+        "y_rel": 0.155,
+        "z_rel": 1.44
+    },
+    "work": {
+        "x_rel": -0.25,
+        "y_rel": -1.83,
+        "z_rel": 1.17
+    }
+}

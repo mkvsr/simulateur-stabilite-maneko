@@ -1,0 +1,17 @@
+{
+    "model": "MULTI LONGER GII 5557 P 57CV",
+    "brand": "KUHN",
+    "gamme": "Pro-TP",
+    "calcul_stab_ref": "TONICA 50",
+    "mass": 1655,
+    "transport": {
+        "x_rel": -0.62,
+        "y_rel": 0.155,
+        "z_rel": 1.36
+    },
+    "work": {
+        "x_rel": -0.11,
+        "y_rel": -1.5,
+        "z_rel": 1.08
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "model": "THENOR 560 PA PREMIUM",
+    "brand": "ROUSSEAU",
+    "gamme": "TP",
+    "calcul_stab_ref": "MAGISTRA M55",
+    "mass": 2000,
+    "transport": {
+        "x_rel": -0.6,
+        "y_rel": 0.155,
+        "z_rel": 1.38
+    },
+    "work": {
+        "x_rel": -0.25,
+        "y_rel": -1.59,
+        "z_rel": 1.17
+    }
+}

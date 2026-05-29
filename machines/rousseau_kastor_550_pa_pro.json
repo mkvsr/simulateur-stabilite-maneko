@@ -1,0 +1,17 @@
+{
+    "model": "KASTOR 550 PA PRO",
+    "brand": "ROUSSEAU",
+    "gamme": "Pro-TP",
+    "calcul_stab_ref": "TONICA M55",
+    "mass": 1550,
+    "transport": {
+        "x_rel": -0.6,
+        "y_rel": 0.155,
+        "z_rel": 1.36
+    },
+    "work": {
+        "x_rel": -0.1,
+        "y_rel": -1.59,
+        "z_rel": 1.09
+    }
+}
